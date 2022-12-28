@@ -1,10 +1,10 @@
 
-import {Link, LinkImg} from "../links/links";
-import arrowRight from "../../assets/img/arrowRight.svg";
+import {Link, LinkImg} from "./links";
+import arrowRight from "../assets/img/arrowRight.svg";
 // import verticalLine from '../../assets/img/verticalLine.svg';
-import instagram from "../../assets/img/instagram.svg";
-import twitter from "../../assets/img/twitter.svg";
-import facebook from "../../assets/img/facebook.svg";
+import instagram from "../assets/img/instagram.svg";
+import twitter from "../assets/img/twitter.svg";
+import facebook from "../assets/img/facebook.svg";
 
 const Sidebar = () => {
   return (

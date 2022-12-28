@@ -1,4 +1,4 @@
-import { Link } from "../links/links";
+import { Link } from "./links";
 const Footer = () => {
   return (
     <footer>
