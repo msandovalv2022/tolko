@@ -1,0 +1,53 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 25px;
+  &__logo {
+    margin-top: 10px;
+    width: 50%;
+    margin-left: 200px;
+    img {
+      height: 50px;
+    }
+  }
+
+  &__options {
+    &--menu {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      background-color: $red;
+      height: 50px;
+      width: 250px;
+      label {
+        color: $white;
+        margin-right: 20px;
+        margin-left: 20px;
+        cursor: pointer;
+      }
+      img {
+        max-width: 30px;
+        cursor: pointer;
+      }
+    }
+    &--lanMode {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      margin-top: 20px;
+      img {
+        margin-right: 20px;
+        height: 36px;
+      }
+
+      select {
+        background-color: transparent;
+        border: none;
+        border-bottom: solid 1px $grey2;
+        padding-bottom: 5px;
+        width: 80px;
+      }
+    }
+  }
+}
