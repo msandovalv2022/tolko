@@ -1,0 +1,52 @@
+.sidebar{
+    display: flex;
+    justify-content: left;
+
+    &__itemsContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 50px   ;
+        &--links{
+            ul{
+                li{
+                    margin-bottom: 8px;
+                    a{
+                        color: $black;
+                    }
+                }
+            }
+        }
+        &--cotiza{
+            height: 50px;
+            width: 250px;
+            background-color: $red;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            a, img{
+                margin-right: 20px;
+            }
+            .link{
+                color: $white;
+                border-right: solid 2px $white;
+                padding-right: 35px;
+            }
+            img{
+                height: 20px;
+            }
+        }
+
+        &--social{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                height: 40px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
