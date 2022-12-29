@@ -36,3 +36,18 @@
     }
   }
 }
+.historia{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  h3{
+    font-size: 35px;
+    padding-left: 500px;
+    padding-right: 500px;
+  }
+  img{
+    height: 500px;
+  }
+}

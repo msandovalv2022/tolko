@@ -7,15 +7,20 @@ import Logro2 from './assets/img/logro2.png';
 import Logro3 from './assets/img/logro3.png';
 import Logro4 from './assets/img/logro4.png';
 import Logro5 from './assets/img/logro5.png';
+import Ondas from './assets/img/ondas.png';
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
       <Sidebar/>
-      <section className='logros'>
-        <h2 className='cTx'>En 84 meses hemos logrado</h2>
-        <div className='logros__line'>
+      <section class="historia bgBlack">
+        <h3 class='cTx whiteTx'>Queremos ser parte de tu historia, a través de...</h3>
+        <img src={Ondas}/>
+      </section>
+      <section class='logros'>
+        <h2 class='cTx'>En 84 meses</h2>
+        <div class='logros__line'>
           <div></div>
         </div>
         <div className='logros__items'>
