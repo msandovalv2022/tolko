@@ -1,12 +1,12 @@
 const Link = (props) =>{
     return(
-        <a href={props.link}>{props.text}</a>
+        <a target={"_blank"} rel={"noopenner"} href={props.link}>{props.text}</a>
     )
 }
 
 const LinkImg = (props) =>{
     return(
-        <a href={props.link}><img src={props.img} alt="" /></a>
+        <a target={"_blank"} rel={"noopenner"} href={props.link}><img src={props.img} alt="" /></a>
     )
 }
 
