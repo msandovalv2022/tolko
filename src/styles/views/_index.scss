@@ -1,12 +1,23 @@
+.header {
+  height: 1000px;
+  background-image: url("../../assets/img/bocas.png");
+  background-image: no-repeat;
+  background-image: fixed;
+  background-image: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .logros {
   &__line {
     display: flex;
     justify-content: center;
     div {
-        width: 1px;
-        background-color: $grey2;
-        height: 100px;
-        margin: 30px;
+      width: 1px;
+      background-color: $grey2;
+      height: 100px;
+      margin: 30px;
     }
   }
   &__items {
@@ -36,18 +47,18 @@
     }
   }
 }
-.historia{
+.historia {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 50px;
-  h3{
+  h3 {
     font-size: 35px;
     padding-left: 500px;
     padding-right: 500px;
   }
-  img{
+  img {
     height: 500px;
   }
 }
