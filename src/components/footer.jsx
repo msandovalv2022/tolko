@@ -33,7 +33,7 @@ const Footer = () => {
               <Link link="#" text="Project manager" />
             </li>
             <li>
-              <Link link="#" text="AudioVisual" />
+              <Link link="#" text="Audiovisual" />
             </li>
           </ul>
         </div>

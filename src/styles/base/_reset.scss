@@ -1,10 +1,6 @@
-@font-face {
-    font-family: futura;
-    src: url('../../assets/font/futura medium bt.ttf');
-}
 *{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    font-family: futura;
+    font-family: $futura;
 }

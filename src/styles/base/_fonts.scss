@@ -1,0 +1,18 @@
+@font-face {
+    font-family: futura;
+    src: url('../../assets/font/futura medium bt.ttf');
+}
+
+@font-face {
+    font-family: futuraLight;
+    src: url('../../assets/font/futura light bt.ttf');
+}
+
+@font-face {
+    font-family: futuraBold;
+    src: url('../../assets/font/Futura Bold font.ttf');
+}
+
+$futura: futura;
+$futuraLight: futuraLight;
+$futuraBold: futuraBold;

@@ -25,6 +25,8 @@
         margin-right: 20px;
         margin-left: 20px;
         cursor: pointer;
+        font-family: futuraLight;
+        font-size: 25px;
       }
       img {
         max-width: 30px;
@@ -46,7 +48,14 @@
         border: none;
         border-bottom: solid 1px $grey2;
         padding-bottom: 5px;
-        width: 80px;
+        width: 100px;
+        font-family: futuraLight;
+        font-size: 20px;
+        option{
+          span{
+            font-family: futuraLight;
+          }
+        }
       }
     }
   }
