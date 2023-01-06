@@ -1,0 +1,42 @@
+.header {
+    width: 100%;
+    height: 1000px;
+    &__imgs{
+        display: flex;
+        justify-content: space-between;
+        &--partOne{
+            align-self: center;
+            img{
+                height: 90px;
+            }
+        }
+        &--partTwo{
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between;
+            align-items: center;
+            translate: 0 -50px;
+            &-bocas2{
+                width: 700px;
+            }
+            p{
+                margin-bottom: 10px;
+                padding: 10px;
+                font-size: 48px;
+            }
+            &-redArrow{
+                max-width: 30px;
+            }
+        }
+        &--partThree{
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content:start;
+            img{
+                margin-bottom: 70px;
+                height: 80px;
+            }
+        }
+    }
+  }

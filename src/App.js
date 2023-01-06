@@ -1,6 +1,7 @@
+import Navbar from "./components/navbar";
+import Header from "./components/header";
 import Sidebar from "./components/sidebar";
 import Footer from "./components/footer";
-import Navbar from "./components/navbar";
 import { ImgMouseMove } from "./components/imgFunctions";
 import Logro1 from "./assets/img/logro1.png";
 import Logro2 from "./assets/img/logro2.png";
@@ -12,38 +13,38 @@ import Ondas from "./assets/img/ondas.png";
 function App() {
   return (
     <div className="App">
-      <div className="header">
+      <Header/>
+      <section className="contentContainer">
         <Navbar />
-        <Sidebar />
-      </div>
-      <div className="spaceSection"></div>
+        <div className="spaceSection"></div>
 
-      <section class="historia bgBlack">
-        <h3 class="cTx whiteTx">
-          Queremos ser parte de tu historia, a través de...
-        </h3>
-        <img src={Ondas} />
-      </section>
+        <section class="historia bgBlack">
+          <h3 class="cTx whiteTx">
+            Queremos ser parte de tu historia, a través de...
+          </h3>
+          <img src={Ondas} />
+        </section>
 
-      <div className="spaceSection"></div>
+        <div className="spaceSection"></div>
 
-      <section class="logros">
-        <h2 class="cTx">En 84 meses</h2>
-        <div class="logros__line">
+        <section class="logros">
+          <h2 class="cTx">En 84 meses</h2>
+          <div class="logros__line">
           <div></div>
         </div>
-        <div className="logros__items">
-          <ImgMouseMove img={Logro1} class="logros__items--clientes" />
-          <ImgMouseMove img={Logro2} class="logros__items--materiales" />
-          <ImgMouseMove img={Logro3} class="logros__items--campanias" />
-          <ImgMouseMove img={Logro4} class="logros__items--paises" />
-          <ImgMouseMove img={Logro5} class="logros__items--entrevistas" />
-        </div>
-      </section>
+          <div className="logros__items">
+            <ImgMouseMove img={Logro1} class="logros__items--clientes" />
+            <ImgMouseMove img={Logro2} class="logros__items--materiales" />
+            <ImgMouseMove img={Logro3} class="logros__items--campanias" />
+            <ImgMouseMove img={Logro4} class="logros__items--paises" />
+            <ImgMouseMove img={Logro5} class="logros__items--entrevistas" />
+          </div>
+        </section>
 
-      <div className="spaceSection"></div>
+        <div className="spaceSection"></div>
       
-      <Footer />
+        <Footer />
+      </section>
     </div>
   );
 }
