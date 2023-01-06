@@ -4,6 +4,26 @@
     overflow-x: hidden;
     font-family: $futura;
 }
+.light{
+    .text{
+        color: $black;
+    }
+    .background{
+        background-color: $white;
+    }
+}
+.dark{
+    .text{
+        color: $white;
+    }
+    .background{
+        background-color: $black;
+    }
+}
+
+.customTheme{
+
+}
 .contentContainer{
     width: 100%;
 }

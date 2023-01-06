@@ -20,6 +20,8 @@ import Ondas from "./assets/img/ondas.png";
 import Toolbar from "./components/toolbar";
 
 function App() {
+
+  // Toolbar
   const[sidetoolbar, setSidetoolbar] = useState(false);
 
   const toggleSidetoolbar = () =>{
