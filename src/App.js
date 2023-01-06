@@ -31,6 +31,7 @@ function App() {
         <Toolbar openSidetoolbar={toggleSidetoolbar} />
         <Backdrop sideToolbar ={sidetoolbar} closeSidetoolbar={toggleSidetoolbar}/>
         <Sidetoolbar sideToolbar ={sidetoolbar}/>
+        <Sidebar/>
 
         <div className="spaceSection"></div>
 
