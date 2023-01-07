@@ -9,6 +9,7 @@ import Header from "./components/header";
 import Sidebar from "./components/sidebar";
 import Footer from "./components/footer";
 import { ImgMouseMove } from "./components/imgFunctions";
+import FloatingBtn from "./components/floatingBtn";
 
 // Imágenes
 import Logro1 from "./assets/img/logro1.png";
@@ -525,6 +526,7 @@ function App() {
 
         <div className="spaceSection"></div>
 
+        <FloatingBtn/>
         <Footer />
       </section>
     </div>
