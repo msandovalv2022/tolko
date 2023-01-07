@@ -12,19 +12,6 @@ import redArrow from '../assets/img/redArrow.png';
 gsap.registerPlugin(ScrollTrigger);
 
 const Header = ()=>{
-    // useEffect(() => {
-    //     var tl = gsap.timeline({
-    //         scrollTrigger: {
-    //             trigger: '.header',
-    //             pin: true,
-    //             start: 'top top',
-    //             end: '+=900 0',
-    //             scrub: 2,
-    //             markers: true
-    //         },  
-    //     });
-
-    // }, [])
     return(
         <section className="header">
             <Sidebar/>

@@ -1,10 +1,5 @@
-// Hooks
-import { useState } from "react";
-
 // Componentes
-import toolbar from "./components/toolbar";
-import Sidetoolbar from "./components/sidetoolbar";
-import Backdrop from "./components/backdrop";
+import Nav from "./components/nav";
 import Header from "./components/header";
 import Sidebar from "./components/sidebar";
 import Footer from "./components/footer";
@@ -21,21 +16,10 @@ import Ondas from "./assets/img/ondas.svg";
 import Toolbar from "./components/toolbar";
 
 function App() {
-  // Toolbar
-  const [sidetoolbar, setSidetoolbar] = useState(false);
-
-  const toggleSidetoolbar = () => {
-    setSidetoolbar((prevState) => !prevState);
-  };
   return (
     <div className="App">
       <section className="contentContainer">
-        <Toolbar openSidetoolbar={toggleSidetoolbar} />
-        <Backdrop
-          sideToolbar={sidetoolbar}
-          closeSidetoolbar={toggleSidetoolbar}
-        />
-        <Sidetoolbar sideToolbar={sidetoolbar} />
+        <Nav/>
         <Sidebar />
 
         <div className="spaceSection"></div>
@@ -44,6 +28,8 @@ function App() {
           <h3 class="cTx whiteTx">
             Queremos ser parte de tu historia, a través de...
           </h3>
+
+          {/* IMAGEN SVG */}
           <svg
             width="1141"
             height="831"
