@@ -29,6 +29,7 @@
       align-items: center;
       img{
         margin-right: 30px;
+        cursor: pointer;
       }
       select{
         background-color: transparent;
@@ -37,6 +38,7 @@
         padding-bottom: 7px;
         width: 100px;
         font-size: 20px;
+        cursor: pointer;
       }
     }
   }

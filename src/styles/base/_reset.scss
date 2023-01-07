@@ -1,29 +1,108 @@
-*{
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    font-family: $futura;
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: $futura;
 }
-.light{
-    .text{
-        color: $black;
+body {
+  &.light {
+    background-color: $white;
+    color: $black;
+    .toolbar {
+      &__logo {
+        .imgLight {
+          display: block;
+        }
+        .imgDark {
+          display: none;
+        }
+      }
+      &__burger {
+        &--changeOptions {
+          #darkMode {
+            .imgLight {
+              display: block;
+            }
+            .imgDark {
+              display: none;
+            }
+          }
+        }
+      }
     }
-    .background{
-        background-color: $white;
+    select {
+      color: $black;
     }
-}
-.dark{
-    .text{
-        color: $white;
+    .sidebar {
+      color: $black;
+      &__itemsContainer {
+        &--social {
+          .imgLight {
+            display: block;
+          }
+          .imgDark {
+            display: none;
+          }
+        }
+      }
     }
-    .background{
-        background-color: $black;
+  }
+  &.dark {
+    background-color: $black;
+    color: $white;
+    .toolbar {
+      &__logo {
+        .imgLight {
+          display: none;
+        }
+        .imgDark {
+          display: block;
+        }
+      }
+      &__burger {
+        &--changeOptions {
+          #darkMode {
+            .imgLight {
+              display: none;
+            }
+            .imgDark {
+              display: block;
+            }
+          }
+        }
+      }
     }
+    select {
+      color: $white;
+    }
+    .sidebar {
+      &__itemsContainer {
+        &--links {
+          ul {
+            li {
+              a {
+                color: $white;
+              }
+            }
+          }
+        }
+        &--social {
+          .imgLight {
+            display: none;
+          }
+          .imgDark {
+            display: block;
+          }
+        }
+      }
+    }
+
+    footer {
+      background-color: $grey3;
+    }
+  }
 }
 
-.customTheme{
-
-}
-.contentContainer{
-    width: 100%;
+.contentContainer {
+  width: 100%;
 }
