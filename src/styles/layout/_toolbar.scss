@@ -1,4 +1,7 @@
 .toolbar {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
   display: flex;
   justify-content: space-between;
   &__logo {

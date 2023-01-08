@@ -1,6 +1,6 @@
 // Componentes
-import Nav from "./components/nav";
 import Header from "./components/header";
+import Nav from "./components/nav";
 import Sidebar from "./components/sidebar";
 import Footer from "./components/footer";
 import { ImgMouseMove } from "./components/imgFunctions";
@@ -13,14 +13,14 @@ import Logro3 from "./assets/img/logro3.png";
 import Logro4 from "./assets/img/logro4.png";
 import Logro5 from "./assets/img/logro5.png";
 import Ondas from "./assets/img/ondas.svg";
-import Toolbar from "./components/toolbar";
 
 function App() {
   return (
     <div className="App">
       <section className="contentContainer">
-        <Nav/>
-        <Sidebar />
+        <Header/>
+        {/* <Nav/>
+        <Sidebar /> */}
 
         <div className="spaceSection"></div>
 
