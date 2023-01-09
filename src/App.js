@@ -1,3 +1,6 @@
+//Hooks
+import {useTranslation} from 'react-i18next'; //Hook de i18next
+
 // Componentes
 import Header from "./components/header";
 import Nav from "./components/nav";
@@ -14,8 +17,10 @@ import Logro4 from "./assets/img/logro4.png";
 import Logro5 from "./assets/img/logro5.png";
 import Ondas from "./assets/img/ondas.svg";
 import SVG from "./assets/svg-loaders/audio.svg";
+// import { useTransition } from 'react';
 
 function App() {
+  const {t} = useTranslation();
   return (
     <div className="App">
       <section className="contentContainer">
@@ -24,7 +29,7 @@ function App() {
 
         <section class="historia bgBlack">
           <h3 class="cTx whiteTx">
-            Queremos ser parte de tu historia, a través de...
+            {t('historia.queremos')}
           </h3>
 
           {/* IMAGEN SVG */}
@@ -490,12 +495,13 @@ function App() {
               </clipPath>
             </defs>
           </svg>
+
         </section>
 
         <div className="spaceSection"></div>
 
         <section class="logros">
-          <h2 class="cTx">En 84 meses</h2>
+          <h2 class="cTx">{t('logros.meses')}</h2>
    
           <div class="logros__line">
             <div></div>

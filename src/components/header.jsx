@@ -1,5 +1,6 @@
 //Hooks
 import { useEffect, useRef } from "react";
+import {useTranslation} from 'react-i18next';
 
 //Libs
 import gsap from "gsap";
@@ -16,8 +17,8 @@ import bocas3 from "../assets/img/bocas3.png";
 import bocas4 from "../assets/img/bocas4.png";
 import redArrow from "../assets/img/redArrow.png";
 
-import SvgLight from '../assets/svg-loaders/ball-triangleLight.svg';
-import SvgDark from '../assets/svg-loaders/ball-triangleDark.svg';
+import SvgLight from "../assets/svg-loaders/ball-triangleLight.svg";
+import SvgDark from "../assets/svg-loaders/ball-triangleDark.svg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -28,7 +29,7 @@ const Header = () => {
   const scrollIconDarkRef = useRef(null);
   const scrollTextRef = useRef(null);
 
-  useEffect(()=>{
+  useEffect(() => {
     const firstAnimatorContainer = firstAnimatorContainerRef.current;
     const scrollLightIcon = scrollIconLightRef.current;
     const scrollDarkIcon = scrollIconDarkRef.current;
@@ -38,14 +39,14 @@ const Header = () => {
         trigger: firstAnimatorContainer,
         pin: true,
         // markers: true,
-        start: 'top top',
-        end : "+=200 0",
+        start: "top top",
+        end: "+=200 0",
         scrub: 3,
-      }
+      },
     });
-    tl.to(scrollLightIcon, {height: '50px', duration: 1});
-    tl.to(scrollDarkIcon, {height: '50px', duration: 1}, '=-1');
-    tl.to(scrollText, {fontSize: '20px', duration: 1}, '-=1');
+    tl.to(scrollLightIcon, { height: "50px", duration: 1 });
+    tl.to(scrollDarkIcon, { height: "50px", duration: 1 }, "=-1");
+    tl.to(scrollText, { fontSize: "20px", duration: 1 }, "-=1");
   }, [firstAnimatorContainerRef]);
 
   //Segundo contenedor animado
@@ -89,13 +90,25 @@ const Header = () => {
     tl.to(bocas1, { x: -1500, duration: 300 });
     tl.to(redArrow, { rotate: "360deg", duration: 8 });
   }, [secondAnimatorContainerRef]);
+
+  const {t} = useTranslation();
   return (
     <header className="header">
       <Nav />
-      <div className="header__scroll" ref = {firstAnimatorContainerRef}>
-        <img className="header__scroll--iconLight" src={SvgLight} alt="" ref={scrollIconLightRef}/>
-        <img className="header__scroll--iconDark" src={SvgDark} alt="" ref={scrollIconDarkRef}/>
-        <h1 ref={scrollTextRef}>Haz scrolling</h1>
+      <div className="header__scroll" ref={firstAnimatorContainerRef}>
+        <img
+          className="header__scroll--iconLight"
+          src={SvgLight}
+          alt=""
+          ref={scrollIconLightRef}
+        />
+        <img
+          className="header__scroll--iconDark"
+          src={SvgDark}
+          alt=""
+          ref={scrollIconDarkRef}
+        />
+        <h1 ref={scrollTextRef}>{t('header.scroll')}</h1>
       </div>
       <div className="header__animate" ref={secondAnimatorContainerRef}>
         <div
@@ -120,13 +133,13 @@ const Header = () => {
           className="header__animate--item header__animate--item-txt1"
           ref={text1ref}
         >
-          CREAMOS
+          {t('header.creamos')}
         </p>
         <p
           className="header__animate--item header__animate--item-txt2"
           ref={text2ref}
         >
-          MEJORES REALIDADES
+          {t('header.mejores')}
         </p>
         <img
           src={bocas3}

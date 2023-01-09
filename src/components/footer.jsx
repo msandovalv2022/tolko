@@ -1,15 +1,21 @@
+//Hooks
+import {useTranslation} from 'react-i18next'; //Hook de i18next
+
 import { Link, LinkImg } from "./links";
 import googleMaps from '../assets/img/googleMaps.svg'
 import horizontalSplit from "./horizontalSplit,";
+
 const Footer = () => {
+  const {t} = useTranslation();
+
   return (
     <footer className="footer bgBlack whiteTx">
       <section className="footer__firstPart">
         <div className="footer__firstPart--text">
-          <h2>Amamos la <br/> Comunicación</h2>
+          <h2>{t("footer.amamos")}</h2>
         </div>
         <div className="footer__firstPart--social">
-          <p>Contacto</p>
+          <p>{t("footer.contacto")}</p>
           <ul>
             <li>
               <Link link="#" text="Facebook" />
@@ -18,22 +24,22 @@ const Footer = () => {
               <Link link="#" text="Instagram" />
             </li>
             <li>
-              <Link link="#" text="Correo" />
+              <Link link="#" text={t("footer.contactoCorreo")} />
             </li>
           </ul>
         </div>
         <div className="footer__firstPart--bolsaTrabajo">
-          <p>Bolsa de trabajo</p>
+          <p>{t("footer.bolsa")}</p>
           <horizontalSplit color="white" width="20" height="5"/>
           <ul>
             <li>
-              <Link link="#" text="Diseño" />
+              <Link link="#" text={t("footer.bolsaDiseño")} />
             </li>
             <li>
-              <Link link="#" text="Project manager" />
+              <Link link="#" text={t("footer.bolsaProyecto")} />
             </li>
             <li>
-              <Link link="#" text="Audiovisual" />
+              <Link link="#" text={t("footer.bolsaAudiovisual")} />
             </li>
           </ul>
         </div>
@@ -45,15 +51,14 @@ const Footer = () => {
         <ul>
           <li>
             <p>
-              © 2022 TOLKO GROUP. ALL RIGHTS RESERVED. TOLKO and the Logo are
-              registered trademarks of Tolko Group.
+              {t("footer.derechos")}
             </p>
           </li>
           <li>
-            <Link link="#" text="Privacy Policy" />
+            <Link link="#" text={t("footer.privacidad")} />
           </li>
           <li>
-            <Link link="#" text="Accesibility Statement" />
+            <Link link="#" text={t("footer.accesibilidad")} />
           </li>
         </ul>
       </section>

@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './config/i18next_config' //Se invoca la configuración de i18next que realizamos
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './styles/styles.scss' //Se hace uso de los estilos de scss Cuandotrabajas con REACT, ya está configurado para reconocer códifo SCSS, por lo que no es necesario trabajar con un compilador de SASS a CSS como cuando no trabajas con REACT

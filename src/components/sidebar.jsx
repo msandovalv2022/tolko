@@ -1,3 +1,4 @@
+import {useTranslation} from 'react-i18next'; //Hook de i18next
 //Components
 import { Link, LinkImg } from "./links";
 import arrowRight from "../assets/img/arrowRight.svg";
@@ -12,28 +13,30 @@ import twitterWhite from "../assets/img/twitterWhite.svg";
 import facebookWhite from "../assets/img/facebookWhite.svg";
 
 const Sidebar = () => {
+  const {t, i18n} = useTranslation();
+
   return (
     <section className="sidebar">
       <div className="sidebar__itemsContainer">
         <div className="sidebar__itemsContainer--links">
           <ul>
             <li>
-              <Link link="#" text="Home" />
+              <Link link="#" text={t("sidebar.home")} />
             </li>
             <li>
-              <Link link="#" text="Historia" />
+              <Link link="#" text={t("sidebar.historia")} />
             </li>
             <li>
-              <Link link="#" text="Blog" />
+              <Link link="#" text={t("sidebar.blog")} />
             </li>
             <li>
-              <Link link="#" text="Clientes" />
+              <Link link="#" text={t("sidebar.clientes")} />
             </li>
           </ul>
         </div>
 
         <div className="sidebar__itemsContainer--cotiza">
-          <Link link="#" text="¡Haz equipo con nosotros!" />
+          <Link link="#" text={t("sidebar.equipo")} />
           <LinkImg class="arrow" link="#" img={arrowRight} />
         </div>
 
