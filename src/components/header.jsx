@@ -16,7 +16,6 @@ import bocas3 from "../assets/img/bocas3.png";
 import bocas4 from "../assets/img/bocas4.png";
 import redArrow from "../assets/img/redArrow.png";
 
-import { FaMouse } from "react-icons/fa";
 import SvgLight from '../assets/svg-loaders/ball-triangleLight.svg';
 import SvgDark from '../assets/svg-loaders/ball-triangleDark.svg';
 
@@ -25,25 +24,29 @@ gsap.registerPlugin(ScrollTrigger);
 const Header = () => {
   //Primer contrenedor animado
   const firstAnimatorContainerRef = useRef(null);
-  const scrollIconRef = useRef(null);
+  const scrollIconLightRef = useRef(null);
+  const scrollIconDarkRef = useRef(null);
   const scrollTextRef = useRef(null);
 
-  // useEffect(()=>{
-  //   const firstAnimatorContainer = firstAnimatorContainerRef.current;
-  //   const scrollIcon = scrollIconRef.current;
-  //   const scrollText = scrollTextRef.current;
-  //   const tl = gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: firstAnimatorContainer,
-  //       pin: true,
-  //       markers: true,
-  //       start: 'top top',
-  //       end : "+=700 0",
-  //       scrub: 3,
-  //     }
-  //   });
-  //   tl.to(scrollIcon, {scale: 2, duration: 5});
-  // });
+  useEffect(()=>{
+    const firstAnimatorContainer = firstAnimatorContainerRef.current;
+    const scrollLightIcon = scrollIconLightRef.current;
+    const scrollDarkIcon = scrollIconDarkRef.current;
+    const scrollText = scrollTextRef.current;
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: firstAnimatorContainer,
+        pin: true,
+        // markers: true,
+        start: 'top top',
+        end : "+=200 0",
+        scrub: 3,
+      }
+    });
+    tl.to(scrollLightIcon, {height: '50px', duration: 1});
+    tl.to(scrollDarkIcon, {height: '50px', duration: 1}, '=-1');
+    tl.to(scrollText, {fontSize: '20px', duration: 1}, '-=1');
+  }, [firstAnimatorContainerRef]);
 
   //Segundo contenedor animado
   const secondAnimatorContainerRef = useRef(null);
@@ -73,7 +76,7 @@ const Header = () => {
         pin: true,
         // markers: true,
         start: "top top",
-        end: "+=700 0",
+        end: "+=1100 0",
         scrub: 3,
       },
     });
@@ -90,9 +93,8 @@ const Header = () => {
     <header className="header">
       <Nav />
       <div className="header__scroll" ref = {firstAnimatorContainerRef}>
-        {/* <FaMouse size="5rem" ref ={scrollIconRef} /> */}
-        <img className="header__scroll--iconLight" src={SvgLight} alt="" />
-        <img className="header__scroll--iconDark" src={SvgDark} alt="" />
+        <img className="header__scroll--iconLight" src={SvgLight} alt="" ref={scrollIconLightRef}/>
+        <img className="header__scroll--iconDark" src={SvgDark} alt="" ref={scrollIconDarkRef}/>
         <h1 ref={scrollTextRef}>Haz scrolling</h1>
       </div>
       <div className="header__animate" ref={secondAnimatorContainerRef}>
