@@ -33,7 +33,7 @@ const Sidebar = () => {
         </div>
 
         <div className="sidebar__itemsContainer--cotiza">
-          <Link link="#" text="Cotiza" />
+          <Link link="#" text="¡Haz equipo con nosotros!" />
           <LinkImg class="arrow" link="#" img={arrowRight} />
         </div>
 

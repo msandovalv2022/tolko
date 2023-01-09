@@ -3,8 +3,6 @@
     display: flex;
     justify-content: left;
     align-items:center;
-    z-index: 99;
-
     &__itemsContainer{
         display: flex;
         flex-direction: column;
@@ -25,8 +23,8 @@
             }
         }
         &--cotiza{
-            height: 50px;
-            width: 250px;
+            height: 80px;
+            width: 260px;
             background-color: $red;
             display: flex;
             justify-content: flex-end;
@@ -38,10 +36,12 @@
                 color: $white;
                 border-right: solid 2px $white;
                 padding-right: 35px;
-                font-size: 25px;
+                font-size: 20px;
+                translate: 10px 0;
             }
             img{
                 height: 20px;
+                translate: 10px 0;
             }
         }
 

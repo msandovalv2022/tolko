@@ -13,15 +13,13 @@ import Logro3 from "./assets/img/logro3.png";
 import Logro4 from "./assets/img/logro4.png";
 import Logro5 from "./assets/img/logro5.png";
 import Ondas from "./assets/img/ondas.svg";
+import SVG from "./assets/svg-loaders/audio.svg";
 
 function App() {
   return (
     <div className="App">
       <section className="contentContainer">
         <Header/>
-        {/* <Nav/>
-        <Sidebar /> */}
-
         <div className="spaceSection"></div>
 
         <section class="historia bgBlack">
@@ -498,6 +496,7 @@ function App() {
 
         <section class="logros">
           <h2 class="cTx">En 84 meses</h2>
+   
           <div class="logros__line">
             <div></div>
           </div>

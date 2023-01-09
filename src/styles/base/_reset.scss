@@ -9,6 +9,16 @@ body {
   &.light {
     background-color: $white;
     color: $black;
+    .header{
+      &__scroll{
+        &--iconLight{
+          display: block;
+        }
+        &--iconDark{
+          display: none;
+        }
+      }
+    }
     .toolbar {
       &__logo {
         .imgLight {
@@ -49,8 +59,23 @@ body {
     }
   }
   &.dark {
-    background-color: $black;
+    background-color: #1d1d1d;
     color: $white;
+    .header{
+      &__scroll{
+        &--iconLight{
+          display: none;
+        }
+        &--iconDark{
+          display: block;
+        }
+      }
+      &__animate{
+        p{
+          background-color: $grey3;
+        }
+      }
+    }
     .toolbar {
       &__logo {
         .imgLight {
@@ -97,7 +122,6 @@ body {
         }
       }
     }
-
     footer {
       background-color: $grey3;
     }
