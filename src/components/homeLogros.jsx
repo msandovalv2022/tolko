@@ -39,19 +39,23 @@ const HomeLogros = () =>{
         tl.to(logrosPaises, {x: "180px", opacity: 1, duration: 1});
         tl.to(logrosEntrevistas, {x: "-370px", opacity: 1, duration: 1});
     }, [logrosContainerRef]);
+
+    //  USE TRANSLATE
+    const {t} = useTranslation();
+
     return(
         <section className="logros" ref={logrosContainerRef}>
-          <h2 classNAme="cTx">En 84 meses</h2>
+          <h2 className="cTx">{t("logros.meses")}</h2>
 
           <div className="logros__line">
             <div></div>
           </div>
           <div className="logros__items">
-            <div className="item logros__items--clientes" ref={logrosClientesRef}>200+ clientes</div>
-            <div className="item logros__items--materiales" ref={logrosMaterialesRef}>50k materiales <br/> de comunicación</div>
-            <div className="item logros__items--campanias" ref={logrosCampaniasRef}>500+ campañas <br/> y estrategias</div>
-            <div className="item logros__items--paises" ref={logrosPaisesRef}>30+ países</div>
-            <div className="item logros__items--entrevistas" ref={logrosEntrevistasRef}>150+ entrevistas en medios</div>
+            <div className="item logros__items--clientes" ref={logrosClientesRef}>{t("logros.clientes")}</div>
+            <div className="item logros__items--materiales" ref={logrosMaterialesRef}>{t("logros.materiales")}</div>
+            <div className="item logros__items--campanias" ref={logrosCampaniasRef}>{t("logros.campanias")}</div>
+            <div className="item logros__items--paises" ref={logrosPaisesRef}>{t("logros.paises")}</div>
+            <div className="item logros__items--entrevistas" ref={logrosEntrevistasRef}>{t("logros.entrevistas")}</div>
           </div>
         </section>
     )

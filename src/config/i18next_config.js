@@ -48,6 +48,11 @@ i18n
                 },
                 "logros":{
                     "meses": "En 84 meses",
+                    "materiales": "50k materiales de comunicación",
+                    "clientes": '200+ clientes',
+                    "campanias": "500+ campañas estratégicas",
+                    "paises": "30+ paises",
+                    "entrevistas": "150+ entrevistas en medios"
                 },
                 // -------------FOOTER---------------
                 "footer":{
@@ -105,6 +110,11 @@ i18n
                 },
                 "logros":{
                     "meses": "In 84 months",
+                    "materiales": "50k communication materials",
+                    "clientes": '200+ customers',
+                    "campanias": "500+ strategic cammpaigns",
+                    "paises": "30+ countries",
+                    "entrevistas": "150+ interviews in media"
                 },
                 "footer":{
                     "amamos": "We love communicating",
