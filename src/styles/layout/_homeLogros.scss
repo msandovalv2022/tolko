@@ -1,0 +1,231 @@
+.logros {
+  h2 {
+    font-size: 35px;
+    text-align: center;
+  }
+  &__line {
+    display: flex;
+    justify-content: center;
+    div {
+      width: 1px;
+      background-color: $grey2;
+      height: 70px;
+      margin: 30px;
+    }
+  }
+  &__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .item {
+      opacity: 0;
+      padding: 0 30px;
+      background-position: center;
+      background-position: center center;
+      background-position: 50%;
+      background-position: 50% 50%;
+      background-position: center 50%;
+      background-position: 50% center;
+      color: $white;
+      font-size: 30px;
+      display: flex;
+      align-items: center;
+      height: 80px;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+    &--clientes {
+      width: 700px;
+      justify-content: right;
+      translate: -1200px 0;
+      background-image: url("../../assets/img/bg_200clientes.png");
+    }
+    &--materiales {
+      width: 800px;
+      justify-content: left;
+      translate: 1200px 0;
+      background-image: url("../../assets/img/bg_materiales.png");
+    }
+    &--campanias {
+      width: 850px;
+      justify-content: right;
+      translate: -1200px 0;
+      background-image: url("../../assets/img/bg_campanias.png");
+    }
+    &--paises {
+      width: 800px;
+      translate: 1200px 0;
+      background-image: url("../../assets/img/bg_paises.png");
+    }
+    &--entrevistas {
+      width: 800px;
+      justify-content: right;
+      translate: -1200px 0;
+      background-image: url("../../assets/img/bg_entrevistas.png");
+    }
+  }
+}
+
+/*-------BREAKPOINT: 1280PX--------*/
+
+@media screen and (max-width: 1280px) {
+  .logros {
+    &__items {
+      translate: 50px;
+    }
+  }
+}
+
+/*-------BREAKPOINT: 1024PX--------*/
+
+@media screen and (max-width: 1024px) {
+  .logros {
+    &__items {
+      translate: 30px;
+    }
+  }
+}
+
+/*-------BREAKPOINT: 768PX--------*/
+
+@media screen and (max-width: 768px) {
+  .logros {
+    &__line {
+      div {
+        height: 50px;
+      }
+    }
+    &__items {
+      translate: 10px;
+      img {
+        height: 70px;
+      }
+      &--materiales {
+        translate: 120px;
+      }
+      &--campanias {
+        translate: -110px 0;
+      }
+    }
+  }
+}
+
+/*-------BREAKPOINT: 668PX--------*/
+
+@media screen and (max-width: 668px) {
+  .logros {
+    &__items {
+      img {
+        height: 60px;
+      }
+      &--materiales {
+        translate: 100px;
+      }
+      &--campanias {
+        translate: -100px 0;
+      }
+    }
+  }
+}
+
+/*-------BREAKPOINT: 576PX--------*/
+
+@media screen and (max-width: 576px) {
+  .logros {
+    &__items {
+      img {
+        height: 60px;
+      }
+      &--materiales {
+        translate: 60px;
+      }
+      &--campanias {
+        translate: -60px 0;
+      }
+      &--paises {
+        translate: 60px 0;
+      }
+    }
+  }
+}
+
+/*-------BREAKPOINT: 480PX--------*/
+
+@media screen and (max-width: 480px) {
+  .logros {
+    h2 {
+      font-size: 30px;
+    }
+    &__items {
+      img {
+        height: 50px;
+      }
+      &--materiales {
+        translate: 50px;
+      }
+      &--paises {
+        translate: 50px 0;
+      }
+      &--entrevistas {
+        translate: -60px 0;
+      }
+    }
+  }
+}
+
+/*-------BREAKPOINT: 380PX--------*/
+
+@media screen and (max-width: 380px) {
+  .logros {
+    h2 {
+      font-size: 24px;
+    }
+    &__line {
+      div {
+        margin: 20px;
+      }
+    }
+    &__items {
+      img {
+        height: 50px;
+      }
+      &--clientes {
+        translate: -50px;
+      }
+      &--materiales {
+        translate: 0px;
+      }
+      &--paises {
+        translate: 50px;
+      }
+      &--entrevistas {
+        translate: -60px;
+      }
+    }
+  }
+}
+
+/*-------BREAKPOINT: 320PX--------*/
+
+@media screen and (max-width: 320px) {
+  .logros {
+    &__items {
+      img {
+        height: 40px;
+      }
+      &--clientes {
+        translate: -50px;
+      }
+      &--materiales {
+        translate: 50px;
+      }
+      &--paises {
+        translate: 50px;
+      }
+      &--entrevistas {
+        translate: -60px;
+      }
+    }
+  }
+}
