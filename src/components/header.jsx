@@ -94,7 +94,7 @@ const Header = () => {
   const {t} = useTranslation();
   return (
     <header className="header">
-      <Nav />
+      {/* <Nav /> */}
       <div className="header__scroll" ref={firstAnimatorContainerRef}>
         <img
           className="header__scroll--iconLight"

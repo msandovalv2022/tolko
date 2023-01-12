@@ -1,9 +1,15 @@
 //Hooks
+import { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next"; //Hook de i18next
+
+//Libs
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 // Componentes
 import Header from "./components/header";
 import Nav from "./components/nav";
+import Toolbar from "./components/toolbar";
 import Sidebar from "./components/sidebar";
 import HomeLogros from "./components/homeLogros";
 import Footer from "./components/footer";
@@ -18,17 +24,59 @@ import Logro4 from "./assets/img/logro4.png";
 import Logro5 from "./assets/img/logro5.png";
 import Ondas from "./assets/img/ondas.svg";
 import SVG from "./assets/svg-loaders/audio.svg";
-// import { useTransition } from 'react';
+
+gsap.registerPlugin(ScrollTrigger);
 
 function App() {
+  const historiaContainerRef = useRef(null);
+
+  useEffect(()=>{
+    const logoNormal = document.querySelector(".toolbar__logo--normal");
+    const logoWhite = document.querySelector(".toolbar__logo--white");
+    const changeLanguage = document.querySelector("#changeLanguage");
+    const historiaContainer = historiaContainerRef.current;
+    const tl = gsap.timeline({
+      scrollTrigger:{
+        trigger: historiaContainer,
+        markers: true,
+        start: 'top top',
+        end: 'top 0',
+        scrub: true,
+      }
+    });
+    tl.to(logoNormal, {display: "none"});
+    tl.to(logoWhite, {display: "block"});
+    tl.to(changeLanguage, {backgroundColor: "#fff"});
+  }, [historiaContainerRef])
+
+  useEffect(()=>{
+    const LogrosContainer = document.querySelector(".normalNavbar"); 
+    const logoNormal = document.querySelector(".toolbar__logo--normal");
+    const logoWhite = document.querySelector(".toolbar__logo--white");
+
+    const tl = gsap.timeline({
+      scrollTrigger:{
+        trigger: LogrosContainer,
+        markers: true,
+        start: 'top top',
+        end: 'top 0',
+        scrub: true,
+      }
+    });
+    tl.to(logoNormal, {display: "block"});
+    tl.to(logoWhite, {display: "none"});
+  }, []);
+
+  //Tranlation variable
   const { t } = useTranslation();
   return (
     <div className="App">
       <section className="contentContainer">
+        <Nav />
         <Header />
         <div className="spaceSection"></div>
 
-        <section class="historia bgBlack">
+        <section class="historia bgBlack" ref={historiaContainerRef}>
           <h3 class="cTx whiteTx">{t("historia.queremos")}</h3>
 
           {/* IMAGEN SVG */}
@@ -505,7 +553,7 @@ function App() {
           </svg>
         </section>
 
-        <div className="spaceSection"></div>
+        <div className="spaceSection normalNavbar"></div>
         
         <HomeLogros />
 

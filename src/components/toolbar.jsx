@@ -8,7 +8,7 @@ import burger from "../assets/img/burger.svg";
 import logoTolko from "../assets/img/logo_tolko.svg";
 import logoTolkoWhite from "../assets/img/logo_tolkoWhite.svg";
 
-const Toolbar = ({openSidetoolbar}) => {
+const Toolbar = ({openSidetoolbar, refTool, refLogo ,refLogoWhite}) => {
   const {t, i18n} = useTranslation();
 
   function changeToEnglish(){
@@ -20,8 +20,8 @@ const Toolbar = ({openSidetoolbar}) => {
   return (
     <div className="toolbar">
       <div className="toolbar__logo">
-        <LinkImg class="imgLight" link="#" img={logoTolko} />
-        <LinkImg class="imgDark" link="#" img={logoTolkoWhite} />
+        <LinkImg class="imgLight toolbar__logo--normal" link="#" img={logoTolko}/>
+        <LinkImg class="imgDark toolbar__logo--white" link="#" img={logoTolkoWhite}/>
         </div>
 
       <div className="toolbar__burger" >
@@ -31,9 +31,9 @@ const Toolbar = ({openSidetoolbar}) => {
         </div>
         <div className="toolbar__burger--changeOptions"> 
           <Darkmode />
-          <select name="" id="">
-            <option value="" onClick={changeToSpanish}>{t("toolbar.espanol")}</option>
-            <option value="" onClick={changeToEnglish}>{t("toolbar.ingles")}</option>
+          <select name="" id="changeLanguage">
+            <option value="es" id="esLanguage" onClick={changeToSpanish}>{t("toolbar.espanol")}</option>
+            <option value="en" id="enLanguage" onClick={changeToEnglish}>{t("toolbar.ingles")}</option>
           </select>
         </div>
       </div>
