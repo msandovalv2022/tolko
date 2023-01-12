@@ -4,46 +4,101 @@
   justify-content: center;
   align-items: center;
   padding: 50px;
+  position: relative;
   h3 {
     font-size: 35px;
     padding-left: 500px;
     padding-right: 500px;
   }
-  // img {
-  //   height: 500px;
-  // }
-  svg {
-    .ondasTexto {
-      &:hover {
-        fill: $red;
+  &__textItem{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    p{
+      font-size: 20px;
+      &:hover{
+        color: $red;
         cursor: pointer;
       }
     }
-    circle {
-      &:hover {
-        fill: $red;
+    &--circle{
+      background-color: $white ;
+      width: 20px;
+      height: 20px;
+      border-radius: 30px;
+      &:hover{
+        background-color: $red;
         cursor: pointer;
       }
     }
-    g {
-      &:hover {
-        d: path(
-          A 20,
-          20 0,
-          0,
-          1 50,
-          30 A 20,
-          20 0,
-          0,
-          1 90,
-          30 Q 90,
-          60 50,
-          90 Q 10,
-          60 10,
-          30 z
-        );
-      }
+  }
+  &__textItem--storytelling{
+    translate: -150px -200px;
+    .circle{
+      translate: -160px 30px;
     }
+  }
+  &__textItem--video{
+    translate: 200px -250px;
+    flex-direction: row-reverse;
+    .circle{
+      translate: -2px 30px;
+    }
+  }
+  &__textItem--audio{
+    translate: 470px -150px;
+    flex-direction: row-reverse;
+    .circle{
+      translate: -20px 30px;
+    }
+  }
+  &__textItem--fotografia{
+    translate: 470px 50px;
+    flex-direction: row-reverse;
+    .circle{
+      translate: -30px 0px;
+    }
+  }
+  &__textItem--produccion{
+    translate: 300px 280px;
+    flex-direction: row-reverse;
+    .circle{
+      translate: -20px -30px;
+    }
+  }
+  &__textItem--impresion{
+    flex-direction: column-reverse;
+    translate: 0px 350px;
+    .circle{
+      translate: 0px -30px;
+    }
+
+  }
+  &__textItem--animacion{
+    translate: -300px 300px;
+    .circle{
+      translate: -70px -60px;
+    }
+  }
+  &__textItem--streaming{
+    flex-direction: column-reverse;
+    translate: -450px 80px;
+    .circle{
+      translate: 70px -10px;
+    }
+  }
+  &__textItem--diseno{
+    translate: -400px -100px;
+    .circle{
+      translate: 10px 20px;
+    }
+    
+  }
+  img {
+    height: 700px;
   }
 }
 /*-------BREAKPOINT: 1280PX--------*/
