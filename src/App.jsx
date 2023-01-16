@@ -39,7 +39,7 @@ function App() {
     const tl = gsap.timeline({
       scrollTrigger:{
         trigger: historiaContainer,
-        markers: true,
+        // markers: true,
         start: 'top top',
         end: 'top 0',
         scrub: true,
@@ -58,7 +58,7 @@ function App() {
     const tl = gsap.timeline({
       scrollTrigger:{
         trigger: LogrosContainer,
-        markers: true,
+        // markers: true,
         start: 'top top',
         end: 'top 0',
         scrub: true,
