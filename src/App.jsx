@@ -130,7 +130,7 @@ function App() {
 
         <div className="spaceSection"></div>
 
-        <FloatingBtn />
+        {/* <FloatingBtn /> */}
         <Footer />
       </section>
     </div>

@@ -31,10 +31,10 @@ const Toolbar = ({openSidetoolbar, refTool, refLogo ,refLogoWhite}) => {
         </div>
         <div className="toolbar__burger--changeOptions"> 
           <Darkmode />
-          <select name="" id="changeLanguage">
+          {/* <select name="" id="changeLanguage">
             <option value="es" id="esLanguage" onClick={changeToSpanish}>{t("toolbar.espanol")}</option>
             <option value="en" id="enLanguage" onClick={changeToEnglish}>{t("toolbar.ingles")}</option>
-          </select>
+          </select> */}
         </div>
       </div>
 

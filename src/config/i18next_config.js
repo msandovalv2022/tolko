@@ -1,16 +1,16 @@
 //Libs
 //Se importa i18next
 import i18n from 'i18next';
-import LanguageDetector from 'i18next-browser-languagedetector'; //Detecta automáticamente el idioma del navegador para que ese idioma sea el peimero que muestra
+// import LanguageDetector from 'i18next-browser-languagedetector'; //Detecta automáticamente el idioma del navegador para que ese idioma sea el peimero que muestra
 import {initReactI18next} from 'react-i18next';
 
 //Se inicializa  i18next
 
 i18n
-.use(LanguageDetector)
+// .use(LanguageDetector)
 .use(initReactI18next)
 .init({
-    // lng: 'es',
+    lng: 'es',
     fallbackLng: 'es',
     resources: {
         es:{
