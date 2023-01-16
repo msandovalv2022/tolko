@@ -11,6 +11,7 @@ import Nav from "./nav";
 import Sidebar from "./sidebar";
 
 //Imgs
+import Bocas from "../assets/img/bocas.png";
 import bocas1 from "../assets/img/bocas1.png";
 import bocas2 from "../assets/img/bocas2.png";
 import bocas3 from "../assets/img/bocas3.png";
@@ -94,6 +95,7 @@ const Header = () => {
   const {t} = useTranslation();
   return (
     <header className="header">
+       <img className="header__imgResponsive" src={Bocas} alt="" />
       {/* <Nav /> */}
       <div className="header__scroll" ref={firstAnimatorContainerRef}>
         <img

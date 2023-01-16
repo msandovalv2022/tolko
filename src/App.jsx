@@ -23,6 +23,7 @@ import Logro3 from "./assets/img/logro3.png";
 import Logro4 from "./assets/img/logro4.png";
 import Logro5 from "./assets/img/logro5.png";
 import Ondas from "./assets/img/ondaCompleta.png";
+import ondasSoloImg from "./assets/img/ondas.png";
 import CircleWaves from "./assets/img/circle.svg";
 import SVG from "./assets/svg-loaders/audio.svg";
 
@@ -79,7 +80,7 @@ function App() {
 
         <section class="historia bgBlack" ref={historiaContainerRef}>
           <h3 class="cTx whiteTx">{t("historia.queremos")}</h3>
-          <div className="historia__textItem historia__textItem--storytelling">
+          {/* <div className="historia__textItem historia__textItem--storytelling">
             <p className="whiteTx">Storytelling y generación de contenidos</p>
             <div className="historia__textItem--circle circle"></div>
           </div>
@@ -121,7 +122,8 @@ function App() {
             <div className="historia__textItem--circle circle"></div>
             
           </div>
-          <img src = {Ondas} alt=""/>
+          <img src = {Ondas} alt=""/> */}
+          <img className="ondaResponsive" src = {ondasSoloImg} alt=""/>
         </section>
 
         <div className="spaceSection normalNavbar"></div>

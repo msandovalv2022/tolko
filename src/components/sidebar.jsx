@@ -24,13 +24,13 @@ const Sidebar = () => {
               <Link link="#" text={t("sidebar.home")} />
             </li>
             <li>
-              <Link link="#" text={t("sidebar.historia")} />
+              <Link className="grayTx" link="#" text={t("sidebar.historia")} />
             </li>
             <li>
-              <Link link="#" text={t("sidebar.blog")} />
+              <Link className="grayTx" link="#" text={t("sidebar.blog")} />
             </li>
             <li>
-              <Link link="#" text={t("sidebar.clientes")} />
+              <Link className="grayTx" link="#" text={t("sidebar.clientes")} />
             </li>
           </ul>
         </div>
@@ -42,13 +42,13 @@ const Sidebar = () => {
 
         <div className="sidebar__itemsContainer--social">
           {/* LIGHT IMAGES */}
-          <LinkImg class="imgLight" link="#" img={instagram} />
-          <LinkImg class="imgLight" link="#" img={twitter} />
-          <LinkImg class="imgLight" link="#" img={facebook} />
+          <LinkImg class="imgLight" link="https://www.instagram.com/grupo_tolko/?hl=en" img={instagram} />
+          <LinkImg class="imgLight" link="https://twitter.com/tolkogroup" img={twitter} />
+          <LinkImg class="imgLight" link="https://www.facebook.com/tolkogroup/" img={facebook} />
           {/* DARK IMAGES */}
-          <LinkImg class="imgDark" link="#" img={instagramWhite} />
-          <LinkImg class="imgDark" link="#" img={twitterWhite} />
-          <LinkImg class="imgDark" link="#" img={facebookWhite} />
+          <LinkImg class="imgDark" link="https://www.instagram.com/grupo_tolko/?hl=en" img={instagramWhite} />
+          <LinkImg class="imgDark" link="https://twitter.com/tolkogroup" img={twitterWhite} />
+          <LinkImg class="imgDark" link="https://www.facebook.com/tolkogroup/" img={facebookWhite} />
         </div>
       </div>
     </section>
