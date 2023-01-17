@@ -101,6 +101,22 @@
     height: 700px;
   }
 }
+
+.certificado{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  a{
+    img{
+      height: 500px;
+    }
+  }
+}
 /*-------BREAKPOINT: 1280PX--------*/
 
 @media screen and (max-width: 1280px) {

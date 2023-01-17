@@ -26,6 +26,8 @@ import Ondas from "./assets/img/ondaCompleta.png";
 import ondasSoloImg from "./assets/img/ondas.png";
 import CircleWaves from "./assets/img/circle.svg";
 import SVG from "./assets/svg-loaders/audio.svg";
+import CertifiedWomen from './assets/img/certifiedWomen.png'
+import { LinkImg } from "./components/links";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -129,6 +131,12 @@ function App() {
         <div className="spaceSection normalNavbar"></div>
         
         <HomeLogros />
+
+        <div className="spaceSection"></div>
+        <div className="certificado">
+          <h2 className="redTx cTx">Contamos con más de 20 años de experiencia</h2>
+          <LinkImg link="./assets/downloads/MX_S29035575_GRUPO TOLKO, S.A. DE C.V._2022 (1).pdf" img={CertifiedWomen} />
+        </div>
 
         <div className="spaceSection"></div>
 
