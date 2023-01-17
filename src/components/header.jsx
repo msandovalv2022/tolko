@@ -1,6 +1,6 @@
 //Hooks
 import { useEffect, useRef } from "react";
-import {useTranslation} from 'react-i18next';
+import { useTranslation } from "react-i18next";
 
 //Libs
 import gsap from "gsap";
@@ -92,78 +92,83 @@ const Header = () => {
     tl.to(redArrow, { rotate: "360deg", duration: 8 });
   }, [secondAnimatorContainerRef]);
 
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
-    <header className="header">
-       <img className="header__imgResponsive" src={Bocas} alt="" />
-      {/* <Nav /> */}
-      <div className="header__scroll" ref={firstAnimatorContainerRef}>
-        <img
-          className="header__scroll--iconLight"
-          src={SvgLight}
-          alt=""
-          ref={scrollIconLightRef}
-        />
-        <img
-          className="header__scroll--iconDark"
-          src={SvgDark}
-          alt=""
-          ref={scrollIconDarkRef}
-        />
-        <h1 ref={scrollTextRef}>{t('header.scroll')}</h1>
-      </div>
-      <div className="header__animate" ref={secondAnimatorContainerRef}>
-        <div
-          className="header__animate--item header__animate--item-sidebar"
-          ref={sidebarRef}
-        >
-          <Sidebar />
+    <section>
+      <header className="header">
+        {/* <Nav /> */}
+        <div className="header__scroll" ref={firstAnimatorContainerRef}>
+          <img
+            className="header__scroll--iconLight"
+            src={SvgLight}
+            alt=""
+            ref={scrollIconLightRef}
+          />
+          <img
+            className="header__scroll--iconDark"
+            src={SvgDark}
+            alt=""
+            ref={scrollIconDarkRef}
+          />
+          <h1 ref={scrollTextRef}>{t("header.scroll")}</h1>
         </div>
-        <img
-          src={bocas1}
-          alt="bocas"
-          className="header__animate--item header__animate--item-boca1"
-          ref={bocas1ref}
-        />
-        <img
-          src={bocas2}
-          alt="bocas"
-          className="header__animate--item header__animate--item-boca2"
-          ref={bocas2ref}
-        />
-        <p
-          className="header__animate--item header__animate--item-txt1"
-          ref={text1ref}
-        >
-          {t('header.creamos')}
-        </p>
-        <p
-          className="header__animate--item header__animate--item-txt2"
-          ref={text2ref}
-        >
-          {t('header.mejores')}
-        </p>
-        <img
-          src={bocas3}
-          alt="bocas"
-          className="header__animate--item header__animate--item-boca3"
-          ref={bocas3ref}
-        />
-        <img
-          src={bocas4}
-          alt="bocas"
-          className="header__animate--item header__animate--item-boca4"
-          ref={bocas4ref}
-        />
-        <img
-          src={redArrow}
-          alt="bocas"
-          className="header__animate--item header__animate--item-redArrow"
-          ref={redArrowRef}
-        />
-      </div>
-    </header>
+        <div className="header__animate" ref={secondAnimatorContainerRef}>
+          <div
+            className="header__animate--item header__animate--item-sidebar"
+            ref={sidebarRef}
+          >
+            <Sidebar />
+          </div>
+          <img
+            src={bocas1}
+            alt="bocas"
+            className="header__animate--item header__animate--item-boca1"
+            ref={bocas1ref}
+          />
+          <img
+            src={bocas2}
+            alt="bocas"
+            className="header__animate--item header__animate--item-boca2"
+            ref={bocas2ref}
+          />
+          <p
+            className="header__animate--item header__animate--item-txt1"
+            ref={text1ref}
+          >
+            {t("header.creamos")}
+          </p>
+          <p
+            className="header__animate--item header__animate--item-txt2"
+            ref={text2ref}
+          >
+            {t("header.mejores")}
+          </p>
+          <img
+            src={bocas3}
+            alt="bocas"
+            className="header__animate--item header__animate--item-boca3"
+            ref={bocas3ref}
+          />
+          <img
+            src={bocas4}
+            alt="bocas"
+            className="header__animate--item header__animate--item-boca4"
+            ref={bocas4ref}
+          />
+          <img
+            src={redArrow}
+            alt="bocas"
+            className="header__animate--item header__animate--item-redArrow"
+            ref={redArrowRef}
+          />
+        </div>
+      </header>
+      <div className="spaceSection"></div>
+      <div className="spaceSection"></div>
+      <img className="header__imgResponsive" src={Bocas} alt="" />
+    </section>
   );
 };
+
 
 export default Header;
