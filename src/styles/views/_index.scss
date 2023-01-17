@@ -169,6 +169,16 @@
       height: 350px;
     }
   }
+  .certificado{
+    h2{
+      font-size: 28px;
+    }
+    a{
+      img{
+        height: 300px;
+      }
+    }
+  }
 }
 
 /*-------BREAKPOINT: 480PX--------*/
@@ -195,6 +205,13 @@
       height: 250px;
     }
   }
+  .certificado{
+    a{
+      img{
+        height: 250px;
+      }
+    }
+  }
 }
 
 /*-------BREAKPOINT: 320PX--------*/
@@ -203,6 +220,16 @@
   .historia {
     img {
       height: 200px;
+    }
+  }
+  .certificado{
+    h2{
+      font-size: 24px;
+    }
+    a{
+      img{
+        height: 200px;
+      }
     }
   }
 }
