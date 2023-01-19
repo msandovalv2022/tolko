@@ -7,14 +7,15 @@
     right: 20px;
     #floatingBtn__chk{
         display: none;
-        &:checked~ .floatingBtn__tolkobot img{
+        &:checked~ .floatingBtn__tolkobot .tolkobot
+        {
             margin-bottom: 10px;
             opacity: 1;
             visibility: visible;
         }
     }
     &__tolkobot{
-        img{
+        .tolkobot{
             display: block;
             opacity: 0;
             visibility: hidden;
