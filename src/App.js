@@ -13,7 +13,6 @@ import Toolbar from "./components/toolbar";
 import Sidebar from "./components/sidebar";
 import HomeLogros from "./components/homeLogros";
 import Footer from "./components/footer";
-import Tolkobot from "./components/tolkobot";
 // import { ImgMouseMove } from "./components/imgFunctions";
 import FloatingBtn from "./components/floatingBtn";
 
@@ -140,7 +139,6 @@ function App() {
         </div>
 
         <div className="spaceSection"></div>
-        <Tolkobot />
 
         <FloatingBtn />
         <Footer />
