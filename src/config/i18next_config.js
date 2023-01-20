@@ -23,10 +23,10 @@ i18n
                     "ingles": "Inglés",
                 },
                 "sidetoolbar":{
-                    "home": "home",
-                    "historia": "historia",
+                    "inicio": "Inicio",
+                    "hacemos": "Lo que hacemos",
                     "blog": "Blog",
-                    "clientes": "Clientes",
+                    "bolsa": "Bolsa de trabajo",
                 },
                 "sidebar":{
                     "home": "Home",

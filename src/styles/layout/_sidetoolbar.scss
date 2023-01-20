@@ -18,9 +18,26 @@
         align-items: center;
         gap: 1rem;
         font-weight: 300;
+        cursor: pointer;
+        a{
+            color: $white;
+        }
         &:hover{
             background-color: #fff;
-            color: #000;
+            a{
+                color: $black;
+                width: 100%;
+            }
+        }
+        
+    }
+    .inactive{
+        cursor:not-allowed;
+        a{
+            color: $grey1;
+        }
+        &:hover{
+            background-color: $red;
         }
     }
     &--open{
