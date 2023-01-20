@@ -11,6 +11,8 @@ import facebook from "../assets/img/facebook.svg";
 import instagramWhite from "../assets/img/instagramWhite.svg";
 import twitterWhite from "../assets/img/twitterWhite.svg";
 import facebookWhite from "../assets/img/facebookWhite.svg";
+import linkedIn from '../assets/img/linkedin.svg'
+import linkedInWhite from '../assets/img/linkedinWhite.svg'
 
 const Sidebar = () => {
   const {t, i18n} = useTranslation();
@@ -21,22 +23,22 @@ const Sidebar = () => {
         <div className="sidebar__itemsContainer--links">
           <ul>
             <li>
-              <Link link="#" text={t("sidebar.home")} />
+              <Link link="#" text={t("sidebar.inicio")} />
             </li>
-            <li>
-              <Link className="grayTx" link="#" text={t("sidebar.historia")} />
+            <li className='inactive'>
+              <Link text={t("sidebar.hacemos")} />
             </li>
-            <li>
-              <Link className="grayTx" link="#" text={t("sidebar.blog")} />
+            <li className='inactive'>
+              <Link text={t("sidebar.blog")} />
             </li>
-            <li>
-              <Link className="grayTx" link="#" text={t("sidebar.clientes")} />
+            <li className='inactive'>
+              <Link text={t("sidebar.bolsa")} />
             </li>
           </ul>
         </div>
 
         <div className="sidebar__itemsContainer--cotiza">
-          <Link link="#" text={t("sidebar.equipo")} />
+          <Link link="#" text={t("sidebar.factor")} />
           <LinkImg class="arrow" link="#" img={arrowRight} />
         </div>
 
@@ -45,10 +47,12 @@ const Sidebar = () => {
           <LinkImg class="imgLight" link="https://www.instagram.com/grupo_tolko/?hl=en" img={instagram} />
           <LinkImg class="imgLight" link="https://twitter.com/tolkogroup" img={twitter} />
           <LinkImg class="imgLight" link="https://www.facebook.com/tolkogroup/" img={facebook} />
+          <LinkImg class="imgLight" link="https://www.facebook.com/tolkogroup/" img={linkedIn} />
           {/* DARK IMAGES */}
           <LinkImg class="imgDark" link="https://www.instagram.com/grupo_tolko/?hl=en" img={instagramWhite} />
           <LinkImg class="imgDark" link="https://twitter.com/tolkogroup" img={twitterWhite} />
           <LinkImg class="imgDark" link="https://www.facebook.com/tolkogroup/" img={facebookWhite} />
+          <LinkImg class="imgDark" link="https://www.facebook.com/tolkogroup/" img={linkedInWhite} />
         </div>
       </div>
     </section>

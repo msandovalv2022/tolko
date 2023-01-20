@@ -29,11 +29,11 @@ i18n
                     "bolsa": "Bolsa de trabajo",
                 },
                 "sidebar":{
-                    "home": "Home",
-                    "historia": "Historia",
+                    "inicio": "Inicio",
+                    "hacemos": "Lo que hacemos",
                     "blog": "Blog",
-                    "clientes": "Clientes",
-                    "equipo": "¡Haz equipo con nosotros!"
+                    "bolsa": "Bolsa de trabajo",
+                    "factor": "Encuentra el factor ÚNICO"
                 },
                 // Header
                 "header":{

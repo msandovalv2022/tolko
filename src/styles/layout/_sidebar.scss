@@ -11,26 +11,46 @@
         margin-left: 50px   ;
         &--links{
             ul{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
                 li{
-                    margin-bottom: 8px;
+                    margin-bottom: 15px;
+                    list-style: none;
                     a{
                         color: $black;
                         font-family: $futura;
                         font-size: 25px;
                         text-align: left;
+                        &:hover{
+                            color: $red;
+                        }
+                    }
+                }
+                .inactive{
+                    a{
+                        color: $grey1;
+                        &:hover{
+                            color: $grey1;
+                            cursor:not-allowed;
+                        }
                     }
                 }
             }
         }
         &--cotiza{
             height: 80px;
-            width: 260px;
+            width: 300px;
             background-color: $red;
             display: flex;
             justify-content: flex-end;
             align-items: center;
             a, img{
                 margin-right: 20px;
+            }
+            a{
+                text-align: left;
             }
             .link{
                 color: $white;
