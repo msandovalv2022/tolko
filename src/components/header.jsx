@@ -141,7 +141,7 @@ const Header = () => {
             className="header__animate--item header__animate--item-txt2"
             ref={text2ref}
           >
-            {t("header.mejores")}
+            {t("header.realidades")}
           </p>
           <img
             src={bocas3}

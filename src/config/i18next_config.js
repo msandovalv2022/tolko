@@ -39,7 +39,7 @@ i18n
                 "header":{
                     "scroll": "Haz scrolling",
                     "creamos": "CREAMOS",
-                    "mejores": "MEJORES REALIDADES",
+                    "realidades": "REALIDADES ÚNICAS",
                 },
 
                 //-------------HOME-------------------
@@ -85,23 +85,23 @@ i18n
                     "ingles": "English",
                 },
                 "sidetoolbar":{
-                    "home": "Home",
-                    "historia": "Story",
+                    "inicio": "Home",
+                    "hacemos": "What We Do",
                     "blog": "Blog",
-                    "clientes": "Customers",
+                    "bolsa": "Careers",
                 },
                 "sidebar":{
-                    "home": "Home",
-                    "historia": "Story",
+                    "inicio": "Home",
+                    "hacemos": "What We Do",
                     "blog": "Blog",
-                    "clientes": "Customers",
-                    "equipo": "Make a team with us!"
+                    "bolsa": "Careers",
+                    "factor": "Find Out the UNIQUE factor"
                 },
                 // Header
                 "header":{
                     "scroll": "Start scrolling",
-                    "creamos": "WE MAKE",
-                    "mejores": "BETTER REALITIES",
+                    "creamos": "WE CREATE",
+                    "realidades": "UNIQUE REALITIES",
                 },
 
                 //HOME
