@@ -47,12 +47,12 @@ const Sidebar = () => {
           <LinkImg class="imgLight" link="https://www.instagram.com/grupo_tolko/?hl=en" img={instagram} />
           <LinkImg class="imgLight" link="https://twitter.com/tolkogroup" img={twitter} />
           <LinkImg class="imgLight" link="https://www.facebook.com/tolkogroup/" img={facebook} />
-          <LinkImg class="imgLight" link="https://www.facebook.com/tolkogroup/" img={linkedIn} />
+          <LinkImg class="imgLight" link="https://www.linkedin.com/company/tolko/" img={linkedIn} />
           {/* DARK IMAGES */}
           <LinkImg class="imgDark" link="https://www.instagram.com/grupo_tolko/?hl=en" img={instagramWhite} />
           <LinkImg class="imgDark" link="https://twitter.com/tolkogroup" img={twitterWhite} />
           <LinkImg class="imgDark" link="https://www.facebook.com/tolkogroup/" img={facebookWhite} />
-          <LinkImg class="imgDark" link="https://www.facebook.com/tolkogroup/" img={linkedInWhite} />
+          <LinkImg class="imgDark" link="https://www.linkedin.com/company/tolko//" img={linkedInWhite} />
         </div>
       </div>
     </section>
