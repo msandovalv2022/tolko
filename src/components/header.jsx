@@ -75,21 +75,21 @@ const Header = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: secondAnimatorContainer,
-        pin: true,
+        // pin: true,
         // markers: true,
-        start: "top top",
-        end: "+=1100 0",
-        scrub: 3,
+        start: "top 300px",
+        end: "end top",
+        // scrub: 3,
       },
     });
-    tl.to(sidebar, { x: 500, duration: 300 });
-    tl.to(bocas2, { y: 800, duration: 300 });
-    tl.to(bocas3, { x: -960, duration: 300 });
-    tl.to(text1, { y: 630, duration: 300 });
-    tl.to(text2, { x: 1367, duration: 300 });
-    tl.to(bocas4, { y: -500, duration: 300 });
-    tl.to(bocas1, { x: -1500, duration: 300 });
-    tl.to(redArrow, { rotate: "360deg", duration: 8 });
+    tl.to(sidebar, { x: 500, duration: 0.4 });
+    tl.to(bocas2, { y: 800, duration: 0.4 });
+    tl.to(bocas3, { x: -960, duration: 0.4 });
+    tl.to(text1, { y: 630, duration: 0.4 });
+    tl.to(text2, { x: 1367, duration: 0.4 });
+    tl.to(bocas4, { y: -500, duration: 0.4 });
+    tl.to(bocas1, { x: -1500, duration: 0.4 });
+    tl.to(redArrow, { rotate: "360deg", duration: 0.4 });
   }, [secondAnimatorContainerRef]);
 
   const { t } = useTranslation();

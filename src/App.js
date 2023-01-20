@@ -78,7 +78,7 @@ function App() {
       <section className="contentContainer">
         <Nav />
         <Header />
-        <div className="spaceSection"></div>
+        {/* <div className="spaceSection"></div> */}
 
         <section class="historia bgBlack" ref={historiaContainerRef}>
           <h3 class="cTx whiteTx">{t("historia.queremos")}</h3>
