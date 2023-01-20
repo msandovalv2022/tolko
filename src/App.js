@@ -134,13 +134,13 @@ function App() {
 
         <div className="spaceSection"></div>
         <section className="certificado">
-          <article className="certificado__titulo">
+          <div className="certificado__titulo">
             <h2 className="certificado__titulo--1">Contamos con más de</h2>
             <h2 className="certificado__titulo--2">20 años de experiencia</h2>
-          </article>
-          <article className="certificado__img">
+          </div>
+          <div className="certificado__img">
             <img src = {CertifiedWomen} alt="Certified Women's" />
-          </article>
+          </div>
         </section>
 
         <div className="spaceSection"></div>
