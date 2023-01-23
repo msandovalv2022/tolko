@@ -82,7 +82,7 @@ const Header = () => {
         // scrub: 3,
       },
     });
-    tl.to(sidebar, { x: 500, duration: 0.4 });
+    tl.to(sidebar, { x: 555, duration: 0.4 });
     tl.to(bocas2, { y: 800, duration: 0.4 });
     tl.to(bocas3, { x: -960, duration: 0.4 });
     tl.to(text1, { y: 630, duration: 0.4 });

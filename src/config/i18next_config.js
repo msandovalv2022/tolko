@@ -33,7 +33,7 @@ i18n
                     "hacemos": "Lo que hacemos",
                     "blog": "Blog",
                     "bolsa": "Bolsa de trabajo",
-                    "factor": "Encuentra el factor ÚNICO"
+                    "factor": "ENCUENTRA EL FACTOR ÚNICO"
                 },
                 // Header
                 "header":{
