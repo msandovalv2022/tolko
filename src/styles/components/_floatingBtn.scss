@@ -7,7 +7,8 @@
     right: 20px;
     #floatingBtn__chk{
         display: none;
-        &:checked~ .floatingBtn__tolkobot .tolkobot
+        &:checked~ .floatingBtn__tolkobot .tolkobotEs,
+        &:checked~ .floatingBtn__tolkobot .tolkobotEn
         {
             margin-bottom: 10px;
             opacity: 1;
@@ -15,10 +16,13 @@
         }
     }
     &__tolkobot{
-        .tolkobot{
+        .tolkobotEs,
+        .tolkobotEn
+        {
             display: block;
             opacity: 0;
             visibility: hidden;
+            z-index: 200;
         }
     }
     &__trigger{

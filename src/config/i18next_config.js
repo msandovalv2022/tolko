@@ -41,6 +41,10 @@ i18n
                     "creamos": "CREAMOS",
                     "realidades": "REALIDADES ÚNICAS",
                 },
+                "tolkobot":{
+                    "intro": "¡Qué tal, soy el Tolkobot! ¿Cuál es tu nombre?",
+                    "respuesta-userName": "Gusto en conocerte {previousValue} ¿En qué te puedo ayudar?",
+                },
 
                 //-------------HOME-------------------
                 "historia":{
@@ -102,6 +106,10 @@ i18n
                     "scroll": "Start scrolling",
                     "creamos": "WE CREATE",
                     "realidades": "UNIQUE REALITIES",
+                },
+                "tolkobot":{
+                    "intro": "Whats Up!, I´m the Tolkobot! What´s your name?",
+                    "respuesta-userName": "Nice to meet you {previousValue}! How can I help you?",
                 },
 
                 //HOME
