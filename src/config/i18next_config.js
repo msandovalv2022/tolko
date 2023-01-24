@@ -51,7 +51,7 @@ i18n
                     "queremos": "Queremos ser parte de tu historia, a través de...",
                 },
                 "logros":{
-                    "meses": "En 84 meses",
+                    "meses": "En 96 meses",
                     "materiales": "50k materiales de comunicación",
                     "clientes": '200+ clientes',
                     "campanias": "500+ campañas estratégicas",
@@ -117,12 +117,12 @@ i18n
                     "queremos": "We wanna to be part of your Story, through...",
                 },
                 "logros":{
-                    "meses": "In 84 months",
+                    "meses": "In 96 months",
                     "materiales": "50k communication materials",
                     "clientes": '200+ customers',
                     "campanias": "500+ strategic cammpaigns",
                     "paises": "30+ countries",
-                    "entrevistas": "Thousand od interviews"
+                    "entrevistas": "Thousands of interviews"
                 },
                 "footer":{
                     "experiencias": "We have more than 20 years of experience",
