@@ -60,7 +60,7 @@ i18n
                 },
                 // -------------FOOTER---------------
                 "footer":{
-                    "amamos": "Amamos la comunicación",
+                    "experiencia": "Contamos con más de 20 años de experiencia",
                     "contacto": "Contacto",
                     "contactoFacebook": "Facebook",
                     "contactoInstagram": "Instagram",
@@ -125,7 +125,7 @@ i18n
                     "entrevistas": "150+ interviews in media"
                 },
                 "footer":{
-                    "amamos": "We love communicating",
+                    "experiencias": "We have more than 20 years of experience",
                     "contacto": "Contact",
                     "contactoFacebook": "Facebook",
                     "contactoInstagram": "Instagram",

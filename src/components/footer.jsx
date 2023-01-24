@@ -1,10 +1,14 @@
 //Hooks
 import {useTranslation} from 'react-i18next'; //Hook de i18next
+//Components
 
 import { Link, LinkImg } from "./links";
-import googleMaps from '../assets/img/googleMaps.svg'
 import horizontalSplit from "./horizontalSplit,";
 
+//Imgs
+import googleMaps from '../assets/img/googleMaps.svg';
+import horizontalGoogleMap from '../assets/img/horizontalGoogleMap.png';
+import weConnectImg from '../assets/img/weConnect.svg';
 const Footer = () => {
   const {t} = useTranslation();
 
@@ -12,7 +16,8 @@ const Footer = () => {
     <footer className="footer bgBlack whiteTx">
       <section className="footer__firstPart">
         <div className="footer__firstPart--text">
-          <h2>{t("footer.amamos")}</h2>
+          <h2>{t("footer.experiencia")}</h2>
+          <img src={weConnectImg} alt="Logo we connect" />
         </div>
         <div className="footer__firstPart--social">
           <p>{t("footer.contacto")}</p>
@@ -44,7 +49,8 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer__firstPart--googleMap">
-          <LinkImg link="https://www.google.com/maps/place/Lago+Alberto+375,+Ju%C3%A1rez,+Miguel+Hidalgo,+11320+Ciudad+de+M%C3%A9xico,+CDMX/@19.4385199,-99.1829107,17z/data=!3m1!4b1!4m5!3m4!1s0x85d1f8ae507dd427:0x88260c70b8672fbe!8m2!3d19.4385149!4d-99.1803358" img={googleMaps}/>
+          <LinkImg class="verticalGoogleMap" link="https://goo.gl/maps/n6XRwtM8f8Pp5kfV6" img={googleMaps}/>
+          <LinkImg class="horizontalGoogleMap" link="https://goo.gl/maps/n6XRwtM8f8Pp5kfV6" img={horizontalGoogleMap}/>
         </div>
       </section>
       <section className="footer__secondPart">

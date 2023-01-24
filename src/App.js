@@ -133,17 +133,6 @@ function App() {
         <HomeLogros />
 
         <div className="spaceSection"></div>
-        <section className="certificado">
-          <div className="certificado__titulo">
-            <h2 className="certificado__titulo--1">Contamos con más de</h2>
-            <h2 className="certificado__titulo--2">20 años de experiencia</h2>
-          </div>
-          <div className="certificado__img">
-            <img src = {CertifiedWomen} alt="Certified Women's" />
-          </div>
-        </section>
-
-        <div className="spaceSection"></div>
 
         <FloatingBtn />
         <Footer />
