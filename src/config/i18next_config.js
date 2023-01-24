@@ -56,7 +56,7 @@ i18n
                     "clientes": '200+ clientes',
                     "campanias": "500+ campañas estratégicas",
                     "paises": "30+ paises",
-                    "entrevistas": "150+ entrevistas en medios"
+                    "entrevistas": "Miles de entrevistas"
                 },
                 // -------------FOOTER---------------
                 "footer":{
@@ -122,7 +122,7 @@ i18n
                     "clientes": '200+ customers',
                     "campanias": "500+ strategic cammpaigns",
                     "paises": "30+ countries",
-                    "entrevistas": "150+ interviews in media"
+                    "entrevistas": "Thousand od interviews"
                 },
                 "footer":{
                     "experiencias": "We have more than 20 years of experience",

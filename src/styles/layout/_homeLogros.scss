@@ -1,68 +1,138 @@
-.logros {
-  h2 {
-    font-size: 35px;
-    text-align: center;
-  }
-  &__line {
-    display: flex;
-    justify-content: center;
-    div {
-      width: 1px;
-      background-color: $grey2;
-      height: 70px;
-      margin: 30px;
+.logrosContainer {
+  .logrosAnimate {
+    h2 {
+      font-size: 35px;
+      text-align: center;
     }
-  }
-  &__items {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .item {
-      opacity: 0;
-      padding: 0 30px;
-      background-position: center;
-      background-position: center center;
-      background-position: 50%;
-      background-position: 50% 50%;
-      background-position: center 50%;
-      background-position: 50% center;
-      color: $white;
-      font-size: 30px;
+    &__line {
       display: flex;
+      justify-content: center;
+      div {
+        width: 1px;
+        background-color: $grey2;
+        height: 70px;
+        margin: 30px;
+      }
+    }
+    &__items {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      height: 80px;
-      margin-bottom: 20px;
-      cursor: pointer;
+      .item {
+        opacity: 0;
+        padding: 0 30px;
+        background-position: center;
+        background-position: center center;
+        background-position: 50%;
+        background-position: 50% 50%;
+        background-position: center 50%;
+        background-position: 50% center;
+        color: $white;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        height: 80px;
+        margin-bottom: 20px;
+        cursor: pointer;
+      }
+      &--clientes {
+        width: 700px;
+        justify-content: right;
+        translate: -1200px 0;
+        background-image: url("../../assets/img/bg_200clientes.png");
+      }
+      &--materiales {
+        width: 800px;
+        justify-content: left;
+        translate: 1200px 0;
+        background-image: url("../../assets/img/bg_materiales.png");
+      }
+      &--campanias {
+        width: 850px;
+        justify-content: right;
+        translate: -1200px 0;
+        background-image: url("../../assets/img/bg_campanias.png");
+      }
+      &--paises {
+        width: 800px;
+        translate: 1200px 0;
+        background-image: url("../../assets/img/bg_paises.png");
+      }
+      &--entrevistas {
+        width: 800px;
+        justify-content: right;
+        translate: -1200px 0;
+        background-image: url("../../assets/img/bg_entrevistas.png");
+      }
     }
-    &--clientes {
-      width: 700px;
-      justify-content: right;
-      translate: -1200px 0;
-      background-image: url("../../assets/img/bg_200clientes.png");
+  }
+  .logros {
+    display: none;
+    h2 {
+      font-size: 35px;
+      text-align: center;
     }
-    &--materiales {
-      width: 800px;
-      justify-content: left;
-      translate: 1200px 0;
-      background-image: url("../../assets/img/bg_materiales.png");
+    &__line {
+      display: flex;
+      justify-content: center;
+      div {
+        width: 1px;
+        background-color: $grey2;
+        height: 70px;
+        margin: 30px;
+      }
     }
-    &--campanias {
-      width: 850px;
-      justify-content: right;
-      translate: -1200px 0;
-      background-image: url("../../assets/img/bg_campanias.png");
-    }
-    &--paises {
-      width: 800px;
-      translate: 1200px 0;
-      background-image: url("../../assets/img/bg_paises.png");
-    }
-    &--entrevistas {
-      width: 800px;
-      justify-content: right;
-      translate: -1200px 0;
-      background-image: url("../../assets/img/bg_entrevistas.png");
+    &__items {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .item {
+        padding: 0 30px;
+        background-position: center;
+        background-position: center center;
+        background-position: 50%;
+        background-position: 50% 50%;
+        background-position: center 50%;
+        background-position: 50% center;
+        color: $white;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        height: 80px;
+        margin-bottom: 20px;
+        cursor: pointer;
+      }
+      &--clientes {
+        width: 700px;
+        justify-content: right;
+        translate: -200px 0;
+        background-image: url("../../assets/img/bg_200clientes.png");
+      }
+      &--materiales {
+        width: 800px;
+        justify-content: left;
+        translate: 365px 0;
+        background-image: url("../../assets/img/bg_materiales.png");
+      }
+      &--campanias {
+        width: 850px;
+        justify-content: right;
+        translate: -213px 0;
+        background-image: url("../../assets/img/bg_campanias.png");
+      }
+      &--paises {
+        width: 800px;
+        translate: 180px 0;
+        background-image: url("../../assets/img/bg_paises.png");
+      }
+      &--entrevistas {
+        width: 800px;
+        justify-content: right;
+        translate: -370px 0;
+        background-image: url("../../assets/img/bg_entrevistas.png");
+      }
     }
   }
 }
@@ -70,9 +140,12 @@
 /*-------BREAKPOINT: 1280PX--------*/
 
 @media screen and (max-width: 1280px) {
-  .logros {
-    &__items {
-      translate: 50px;
+  .logrosContainer {
+    .logrosAnimate {
+      display: none;
+    }
+    .logros{
+      display: block;
     }
   }
 }
@@ -80,32 +153,30 @@
 /*-------BREAKPOINT: 1024PX--------*/
 
 @media screen and (max-width: 1024px) {
-  .logros {
-    &__items {
-      translate: 30px;
-    }
-  }
+}
+
+/*--------BREAKPOINT: 992PX---------*/
+@media screen and (max-width: 992px) {
+  
 }
 
 /*-------BREAKPOINT: 768PX--------*/
 
 @media screen and (max-width: 768px) {
-  .logros {
-    &__line {
-      div {
-        height: 50px;
-      }
-    }
-    &__items {
-      translate: 10px;
-      img {
-        height: 70px;
-      }
-      &--materiales {
-        translate: 120px;
-      }
-      &--campanias {
-        translate: -110px 0;
+  .logrosContainer{
+    .logros{
+      &__items{
+        &--clientes{
+          translate: -100px 0;
+        }
+        &--materiales{
+          width: 600px;
+          translate: 100px 0;
+        }
+        &--entrevistas {
+          width: 800px;
+          translate: -150px 0;
+        }
       }
     }
   }
@@ -153,22 +224,24 @@
 /*-------BREAKPOINT: 480PX--------*/
 
 @media screen and (max-width: 480px) {
-  .logros {
-    h2 {
-      font-size: 30px;
-    }
-    &__items {
-      img {
-        height: 50px;
-      }
-      &--materiales {
-        translate: 50px;
-      }
-      &--paises {
-        translate: 50px 0;
-      }
-      &--entrevistas {
-        translate: -60px 0;
+  .logrosContainer{
+    .logros{
+      &__items{
+        .item{
+          font-size: 26px;
+        }
+        &--clientes{
+          width: 400px;
+          translate: -50px 0;
+        }
+        &--materiales{
+          width: 550px;
+          translate: 60px 0;
+        }
+        &--entrevistas {
+          width: 800px;
+          translate: -250px 0;
+        }
       }
     }
   }
@@ -177,30 +250,39 @@
 /*-------BREAKPOINT: 380PX--------*/
 
 @media screen and (max-width: 380px) {
-  .logros {
-    h2 {
-      font-size: 24px;
-    }
-    &__line {
-      div {
-        margin: 20px;
+  .logrosContainer{
+    .logros{
+      &__line{
+        div{
+          height: 50px;
+        }
       }
-    }
-    &__items {
-      img {
-        height: 50px;
-      }
-      &--clientes {
-        translate: -50px;
-      }
-      &--materiales {
-        translate: 0px;
-      }
-      &--paises {
-        translate: 50px;
-      }
-      &--entrevistas {
-        translate: -60px;
+      &__items{
+        .item{
+          font-size: 18px;
+          justify-content: center;
+          translate: 0;
+        }
+        &--clientes{
+          width: 400px;
+          justify-content: center;
+          translate: 0;
+        }
+        &--materiales{
+          width: 550px;
+          justify-content: center;
+          translate: 0;
+        }
+        &--paises {
+          width: 550px;
+          justify-content: center;
+          translate: 0;
+        }
+        &--entrevistas {
+          width: 800px;
+          justify-content: center;
+          translate: 0;
+        }
       }
     }
   }
@@ -209,23 +291,4 @@
 /*-------BREAKPOINT: 320PX--------*/
 
 @media screen and (max-width: 320px) {
-  .logros {
-    &__items {
-      img {
-        height: 40px;
-      }
-      &--clientes {
-        translate: -50px;
-      }
-      &--materiales {
-        translate: 50px;
-      }
-      &--paises {
-        translate: 50px;
-      }
-      &--entrevistas {
-        translate: -60px;
-      }
-    }
-  }
 }
