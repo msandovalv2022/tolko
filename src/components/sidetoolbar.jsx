@@ -17,6 +17,7 @@ const Sidetoolbar = ({sideToolbar}) =>{
             <li className='inactive'><Link text = {t("sidetoolbar.hacemos")}/> </li>
             <li className='inactive'><Link text = {t("sidetoolbar.blog")}/> </li>
             <li className='inactive'><Link text = {t("sidetoolbar.bolsa")}/> </li>
+            <li></li>
         </div>
     )
 }
