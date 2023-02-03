@@ -25,7 +25,7 @@ const Sidebar = () => {
             <li>
               <Link link="#" text={t("sidebar.inicio")} />
             </li>
-            <li className='inactive'>
+            {/* <li className='inactive'>
               <Link text={t("sidebar.hacemos")} />
             </li>
             <li className='inactive'>
@@ -33,7 +33,7 @@ const Sidebar = () => {
             </li>
             <li className='inactive'>
               <Link text={t("sidebar.bolsa")} />
-            </li>
+            </li> */}
           </ul>
         </div>
 

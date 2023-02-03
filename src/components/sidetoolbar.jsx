@@ -14,9 +14,9 @@ const Sidetoolbar = ({sideToolbar}) =>{
     return(
         <div className={sideToolbar ? "sidetoolbar sidetoolbar--open" : "sidetoolbar"}>
             <li className><Link link="www.google.com" text = {t("sidetoolbar.inicio")}/> </li>
-            <li className='inactive'><Link text = {t("sidetoolbar.hacemos")}/> </li>
+            {/* <li className='inactive'><Link text = {t("sidetoolbar.hacemos")}/> </li>
             <li className='inactive'><Link text = {t("sidetoolbar.blog")}/> </li>
-            <li className='inactive'><Link text = {t("sidetoolbar.bolsa")}/> </li>
+            <li className='inactive'><Link text = {t("sidetoolbar.bolsa")}/> </li> */}
             <li></li>
         </div>
     )
