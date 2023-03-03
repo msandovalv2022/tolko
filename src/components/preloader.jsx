@@ -14,7 +14,7 @@ const Preloader = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: preloaderContainer,
-        markers: true,
+        // markers: true,
         start: "top top",
         end: "+=200 0",
       },
