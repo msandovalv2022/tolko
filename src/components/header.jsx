@@ -11,11 +11,12 @@ import Nav from "./nav";
 import Sidebar from "./sidebar";
 
 //Imgs
-import Bocas from "../assets/img/bocas.png";
-import bocas1 from "../assets/img/bocas1.png";
-import bocas2 from "../assets/img/bocas2.png";
-import bocas3 from "../assets/img/bocas3.png";
-import bocas4 from "../assets/img/bocas4.png";
+import homeherobannerEs from "../assets/img/home_herobanner_es.png";
+import homeherobannerEn from "../assets/img/home_herobanner_en.png";
+import bocas1 from "../assets/img/home_herobanner_right.png";
+import bocas2 from "../assets/img/home_herobanner_center.png";
+import bocas3 from "../assets/img/home_herobanner_left.png";
+import bocas4 from "../assets/img/home_herobanner_left.png";
 import redArrow from "../assets/img/redArrow.png";
 
 import SvgLight from "../assets/svg-loaders/ball-triangleLight.svg";
@@ -165,10 +166,10 @@ const Header = () => {
       </header>
       <div className="spaceSection"></div>
       <div className="spaceSection"></div>
-      <img className="header__imgResponsive" src={Bocas} alt="" />
+      <img id="homeHerobannerEs" className="header__imgResponsive" src={homeherobannerEs} alt="" />
+      {/* <img id="homeHerobannerEn" className="header__imgResponsive" src={homeherobannerEn} alt="" /> */}
     </section>
   );
 };
-
 
 export default Header;

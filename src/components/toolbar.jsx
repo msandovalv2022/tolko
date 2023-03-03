@@ -34,7 +34,7 @@ const Toolbar = ({ openSidetoolbar, refTool, refLogo, refLogoWhite }) => {
         </div>
         <div className="toolbar__burger--changeOptions">
           <Darkmode />
-          <Language/>
+          {/* <Language/> */}
         </div>
       </div>
     </div>
