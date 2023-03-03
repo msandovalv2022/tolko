@@ -24,32 +24,6 @@ import SvgDark from "../assets/svg-loaders/ball-triangleDark.svg";
 gsap.registerPlugin(ScrollTrigger);
 
 const Header = () => {
-  //Primer contrenedor animado
-  const firstAnimatorContainerRef = useRef(null);
-  const scrollIconLightRef = useRef(null);
-  const scrollIconDarkRef = useRef(null);
-  const scrollTextRef = useRef(null);
-
-  useEffect(() => {
-    const firstAnimatorContainer = firstAnimatorContainerRef.current;
-    const scrollLightIcon = scrollIconLightRef.current;
-    const scrollDarkIcon = scrollIconDarkRef.current;
-    const scrollText = scrollTextRef.current;
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: firstAnimatorContainer,
-        pin: true,
-        // markers: true,
-        start: "top top",
-        end: "+=200 0",
-        scrub: 3,
-      },
-    });
-    tl.to(scrollLightIcon, { height: "50px", duration: 1 });
-    tl.to(scrollDarkIcon, { height: "50px", duration: 1 }, "=-1");
-    tl.to(scrollText, { fontSize: "20px", duration: 1 }, "-=1");
-  }, [firstAnimatorContainerRef]);
-
   //Segundo contenedor animado
   const secondAnimatorContainerRef = useRef(null);
   const sidebarRef = useRef(null);
@@ -82,6 +56,7 @@ const Header = () => {
         // scrub: 3,
       },
     });
+    tl.to(sidebar, { x: 0, duration: 3 });
     tl.to(sidebar, { x: 555, duration: 0.4 });
     tl.to(bocas2, { y: 800, duration: 0.4 });
     tl.to(bocas3, { x: -960, duration: 0.4 });
@@ -96,22 +71,6 @@ const Header = () => {
   return (
     <section>
       <header className="header">
-        {/* <Nav /> */}
-        <div className="header__scroll" ref={firstAnimatorContainerRef}>
-          <img
-            className="header__scroll--iconLight"
-            src={SvgLight}
-            alt=""
-            ref={scrollIconLightRef}
-          />
-          <img
-            className="header__scroll--iconDark"
-            src={SvgDark}
-            alt=""
-            ref={scrollIconDarkRef}
-          />
-          <h1 ref={scrollTextRef}>{t("header.scroll")}</h1>
-        </div>
         <div className="header__animate" ref={secondAnimatorContainerRef}>
           <div
             className="header__animate--item header__animate--item-sidebar"

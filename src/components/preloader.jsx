@@ -19,11 +19,9 @@ const Preloader = () => {
         end: "+=200 0",
       },
     });
-    tl.to(preloaderContainer, {y:"0px", duration: 3});
-    tl.to(preloaderContainer, {y:"-800px", duration: 3});
-    tl.to(preloaderIcon,{height: "50px", duration: 3},"-=3");
-    tl.to(preloaderTitle,{scale: "1.5", duration: 3},"-=3");
-    tl.to(preloaderContainer, {display:"none", duration: 1});
+    tl.to(preloaderContainer, {y:"0px", duration: 1.8});
+    tl.to(preloaderContainer, {y:"-800px", duration: 1.5});
+    tl.to(preloaderContainer, {display:"none", duration: 0.1});
   }, []);
   return (
     <section id="preloader_container" className="preloader">
