@@ -1,0 +1,19 @@
+.preloader {
+  background-color: $black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: -10px;
+  z-index: 55;
+  &__iconLight,
+  &__iconDark {
+    height: 100px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+}

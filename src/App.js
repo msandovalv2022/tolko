@@ -15,6 +15,7 @@ import HomeLogros from "./components/homeLogros";
 import Footer from "./components/footer";
 // import { ImgMouseMove } from "./components/imgFunctions";
 import FloatingBtn from "./components/floatingBtn";
+import Preloader from "./components/preloader";
 
 // Imágenes
 import Logro1 from "./assets/img/logro1.png";
@@ -28,6 +29,7 @@ import CircleWaves from "./assets/img/circle.svg";
 import SVG from "./assets/svg-loaders/audio.svg";
 import CertifiedWomen from './assets/img/certifiedWomen.png'
 import { LinkImg } from "./components/links";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -75,6 +77,7 @@ function App() {
   const { t } = useTranslation();
   return (
     <div className="App">
+      <Preloader/>
       <section className="contentContainer">
         <Nav />
         <Header />
