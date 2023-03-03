@@ -12,7 +12,6 @@ import Sidebar from "./sidebar";
 
 //Imgs
 import homeherobannerEs from "../assets/img/home_herobanner_es.png";
-import homeherobannerEn from "../assets/img/home_herobanner_en.png";
 import bocas1 from "../assets/img/home_herobanner_right.png";
 import bocas2 from "../assets/img/home_herobanner_center.png";
 import bocas3 from "../assets/img/home_herobanner_left.png";
@@ -167,7 +166,6 @@ const Header = () => {
       <div className="spaceSection"></div>
       <div className="spaceSection"></div>
       <img id="homeHerobannerEs" className="header__imgResponsive" src={homeherobannerEs} alt="" />
-      {/* <img id="homeHerobannerEn" className="header__imgResponsive" src={homeherobannerEn} alt="" /> */}
     </section>
   );
 };
