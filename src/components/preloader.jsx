@@ -35,7 +35,7 @@ const Preloader = () => {
         alt="svg loader dark"
         className="preloader__iconDark preloaderImg"
       />
-      <h1 className="preloader__title">Estamos preparando algo increíble para tí</h1>
+      <h1 className="preloader__title">Estamos preparando algo increíble para ti</h1>
     </section>
   );
 };

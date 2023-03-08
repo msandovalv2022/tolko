@@ -53,9 +53,9 @@ i18n
                 "logros":{
                     "meses": "En 96 meses",
                     "materiales": "50k materiales de comunicación",
-                    "clientes": '200+ clientes',
-                    "campanias": "500+ campañas estratégicas",
-                    "paises": "30+ paises",
+                    "clientes": '+200 clientes',
+                    "campanias": "+500 campañas estratégicas",
+                    "paises": "+30 paises",
                     "entrevistas": "Miles de entrevistas"
                 },
                 // -------------FOOTER---------------
@@ -65,11 +65,11 @@ i18n
                     "contactoFacebook": "Facebook",
                     "contactoInstagram": "Instagram",
                     "contactoCorreo": "Correo",
-                    "bolsa": "Bolsa de Trabajo",
+                    "bolsa": "Bolsa de trabajo",
                     "bolsaDiseño": "Diseño",
                     "bolsaProyecto": "Project manager",
                     "bolsaAudiovisual": "Audiovisual",
-                    "derechos": "© 2022 TOLKO GROUP. ALL RIGHTS RESERVED. TOLKO and the Logo are registered trademarks of Tolko Group.",
+                    "derechos": "© 2023 TOLKO GROUP. ALL RIGHTS RESERVED. TOLKO and the Logo are registered trademarks of Tolko Group.",
                     "privacidad": "Política de privacidad",
                     "accesibilidad": "Declaración de accesibilidad"
                 },
@@ -119,9 +119,9 @@ i18n
                 "logros":{
                     "meses": "In 96 months",
                     "materiales": "50k communication materials",
-                    "clientes": '200+ customers',
-                    "campanias": "500+ strategic cammpaigns",
-                    "paises": "30+ countries",
+                    "clientes": '+200 customers',
+                    "campanias": "+500 strategic cammpaigns",
+                    "paises": "+30 countries",
                     "entrevistas": "Thousands of interviews"
                 },
                 "footer":{
@@ -134,7 +134,7 @@ i18n
                     "bolsaDiseño": "Design",
                     "bolsaProyecto": "Project manager",
                     "bolsaAudiovisual": "Audiovisual",
-                    "derechos": "© 2022 TOLKO GROUP. ALL RIGHTS RESERVED. TOLKO and the Logo are registered trademarks of Tolko Group.",
+                    "derechos": "© 2023 TOLKO GROUP. ALL RIGHTS RESERVED. TOLKO and the Logo are registered trademarks of Tolko Group.",
                     "privacidad": "Privacy Police",
                     "accesibilidad": "Accesibility statement"
                 },
