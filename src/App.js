@@ -36,7 +36,34 @@ gsap.registerPlugin(ScrollTrigger);
 
 function App() {
   const historiaContainerRef = useRef(null);
-  const [estadoModal1, cambiarEstadoModal1] = useState(false);
+  const [
+    modalComunicacionCorporativa,
+    cambiarModalComunicacionCorporativa,
+  ] = useState(false);
+
+  const [modalRelacionesPublicas, cambiarModalRelacionesPublicas] = useState(
+    false
+  );
+
+  const [modalReputacion, cambiarModalReputacion] = useState(false);
+
+  const [
+    modalComunicacionPublicitaria,
+    cambiarModalComunicacionPublicitaria,
+  ] = useState(false);
+
+  const [modalEstrategiaDigital, cambiarModalEstrategiaDigital] = useState(
+    false
+  );
+
+  const [
+    modalConsultoriaEstrategica,
+    cambiarModalConsultoriaEstrategica,
+  ] = useState(false);
+
+  const [modalCoachingLideres, cambiarModalCoachingLideres] = useState(false);
+  const [modalDiagnosticosComunicacion, cambiarModalDiagnosticosComunicacion] = useState(false);
+  const [modalCreatividadProduccion, cambiarModalCreatividadProduccion] = useState(false);
 
   useEffect(() => {
     const logoNormal = document.querySelector(".toolbar__logo--normal");
@@ -83,69 +110,286 @@ function App() {
       <section className="contentContainer">
         <Nav />
         <Header />
-        <Modal
-          estado = {estadoModal1}
-          cambiarEstado = {cambiarEstadoModal1}
-          titulo = "Storytelling y generación de contenidos"
-          mostrarHeader = {true}
-          mostrarOverlay = {false}
-          posicionVerticalModal = {'center'}
-          posicionHorizontalModal = {'center'}
-          padding = {'20px'}
-        >
-          <Contenido>
-            <h1>Ventana Modal</h1>
-            <p>Reutilizable y con opciones de personalización</p>
-            <Boton>Aceptar</Boton>
-          </Contenido>
-        </Modal>
 
         <section class="historia bgBlack" ref={historiaContainerRef}>
           <h3 class="cTx whiteTx">{t("historia.queremos")}</h3>
-          <div className="historia__textItem historia__textItem--storytelling">
-            <p className="whiteTx">Storytelling y generación de contenidos</p>
-            <div onClick = {() => cambiarEstadoModal1(!estadoModal1)} className="historia__textItem--circle circle"></div>
+          <div className="historia__textItem historia__textItem--comunicacionCorporativa">
+            <p className="whiteTx">Comunicación corporativa</p>
+            <div
+              onClick={() =>
+                cambiarModalComunicacionCorporativa(
+                  !modalComunicacionCorporativa
+                )
+              }
+              className="historia__textItem--circle circle"
+            ></div>
           </div>
-          <div className="historia__textItem historia__textItem--video">
-            <p className="whiteTx">Producción de video</p>
-            <button className="historia__textItem--circle circle"></button>
-            
+          <div className="historia__textItem historia__textItem--relaciones">
+            <p className="whiteTx">Relaciones públicas</p>
+            <div
+              onClick={() =>
+                cambiarModalRelacionesPublicas(!modalRelacionesPublicas)
+              }
+              className="historia__textItem--circle circle"
+            ></div>
           </div>
-          <div className="historia__textItem historia__textItem--audio">
-            <p className="whiteTx">Producción de audio</p>
-            <div className="historia__textItem--circle circle"></div>
-            
+          <div className="historia__textItem historia__textItem--reputacion">
+            <p className="whiteTx">Reputación</p>
+            <div
+              onClick={() => cambiarModalReputacion(!modalReputacion)}
+              className="historia__textItem--circle circle"
+            ></div>
           </div>
-          <div className="historia__textItem historia__textItem--fotografia">
-            <p className="whiteTx">Fotografía</p>
-            <div className="historia__textItem--circle circle"></div>
-            
+          <div className="historia__textItem historia__textItem--comunicacionPublicitaria">
+            <p className="whiteTx">Comunicación publicitaria</p>
+            <div
+              onClick={() =>
+                cambiarModalComunicacionPublicitaria(
+                  !modalComunicacionPublicitaria
+                )
+              }
+              className="historia__textItem--circle circle"
+            ></div>
           </div>
-          <div className="historia__textItem historia__textItem--produccion">
-            <p className="whiteTx">Producción</p>
-            <div className="historia__textItem--circle circle"></div>
-            
+          <div className="historia__textItem historia__textItem--estrategiaDigital">
+            <p className="whiteTx">Estrategia digital</p>
+            <div
+              onClick={() =>
+                cambiarModalEstrategiaDigital(!modalEstrategiaDigital)
+              }
+              className="historia__textItem--circle circle"
+            ></div>
           </div>
-          <div className="historia__textItem historia__textItem--impresion">
-            <p className="whiteTx">Impresión en pequeño y gran formato</p>
-            <div className="historia__textItem--circle circle"></div> 
+          <div className="historia__textItem historia__textItem--consultoriaEstrategica">
+            <p className="whiteTx">Consultoría estratégica</p>
+            <div
+              onClick={() =>
+                cambiarModalConsultoriaEstrategica(!modalConsultoriaEstrategica)
+              }
+              className="historia__textItem--circle circle"
+            ></div>
           </div>
-          <div className="historia__textItem historia__textItem--animacion">
-            <p className="whiteTx">Animación y educación audiovisual</p>
-            <div className="historia__textItem--circle circle"></div>
+          <div className="historia__textItem historia__textItem--coachingLideres">
+            <p className="whiteTx">Coaching a líderes</p>
+            <div
+              onClick={() => cambiarModalCoachingLideres(!modalCoachingLideres)}
+              className="historia__textItem--circle circle"
+            ></div>
           </div>
-          <div className="historia__textItem historia__textItem--streaming">
-            <p className="whiteTx">Streaming</p>
-            <div className="historia__textItem--circle circle"></div>
-            
+          <div className="historia__textItem historia__textItem--diagnosticosComunicacion">
+            <p className="whiteTx">Diagnósticos de comunicación</p>
+            <div onClick={() =>
+                cambiarModalDiagnosticosComunicacion(!modalDiagnosticosComunicacion)
+              } className="historia__textItem--circle circle"></div>
           </div>
-          <div className="historia__textItem historia__textItem--diseno">
-            <p className="whiteTx">Diseño</p>
-            <div className="historia__textItem--circle circle"></div>
-            
+          <div className="historia__textItem historia__textItem--creatividadProduccion">
+            <p className="whiteTx">Creatividad y producción</p>
+            <div onClick={() =>
+                cambiarModalCreatividadProduccion(!modalCreatividadProduccion)
+              }  className="historia__textItem--circle circle"></div>
           </div>
-          <img src = {Ondas} alt=""/>
+          <img src={Ondas} alt="" />
           {/* <img className="ondaResponsive" src={ondasSoloImg} alt="" /> */}
+
+          {/* PopUps de servicios */}
+          <Modal
+            estado={modalComunicacionCorporativa}
+            cambiarEstado={cambiarModalComunicacionCorporativa}
+            titulo="Comunicación corporativa"
+            mostrarHeader={true}
+            mostrarOverlay={false}
+            posicionVerticalModal={"center"}
+            posicionHorizontalModal={"center"}
+            padding={"20px"}
+          >
+            <Contenido>
+              <p>
+                Por medio de distintas estrategias, la empresa se comunica con
+                sus clientes, equipo y proveedores. Contribuye con solidez a su
+                posicionamiento como marca, mejora su reputación y encuentra el
+                diferenciador ante sus competidores.
+              </p>
+              <Boton>Aceptar</Boton>
+            </Contenido>
+          </Modal>
+
+          <Modal
+            estado={modalRelacionesPublicas}
+            cambiarEstado={cambiarModalRelacionesPublicas}
+            titulo="Relaciones públicas"
+            mostrarHeader={true}
+            mostrarOverlay={false}
+            posicionVerticalModal={"center"}
+            posicionHorizontalModal={"center"}
+            padding={"20px"}
+          >
+            <Contenido>
+              <p>
+                Son una parte fundamental de la comunicación estratégica que
+                construye y fortalece relaciones en beneficio mutuo: entre
+                organizaciones y públicos objetivos.
+              </p>
+              <Boton>Aceptar</Boton>
+            </Contenido>
+          </Modal>
+
+          <Modal
+            estado={modalReputacion}
+            cambiarEstado={cambiarModalReputacion}
+            titulo="Reputación"
+            mostrarHeader={true}
+            mostrarOverlay={false}
+            posicionVerticalModal={"center"}
+            posicionHorizontalModal={"center"}
+            padding={"20px"}
+          >
+            <Contenido>
+              <p>
+                Es intangible, se construye a partir de la imagen que la empresa
+                proyecta y la percepción de la sociedad con base en sus acciones
+                internas y externas.
+              </p>
+              <Boton>Aceptar</Boton>
+            </Contenido>
+          </Modal>
+
+          <Modal
+            estado={modalComunicacionPublicitaria}
+            cambiarEstado={cambiarModalComunicacionPublicitaria}
+            titulo="Comunicación publicitaria"
+            mostrarHeader={true}
+            mostrarOverlay={false}
+            posicionVerticalModal={"center"}
+            posicionHorizontalModal={"center"}
+            padding={"20px"}
+          >
+            <Contenido>
+              <p>
+                Busca que las personas adquieran distintos hábitos de consumo,
+                ya sea de marcas, productos o ideas por medio de mensajes
+                persuasivos.
+              </p>
+              <Boton>Aceptar</Boton>
+            </Contenido>
+          </Modal>
+
+          <Modal
+            estado={modalComunicacionPublicitaria}
+            cambiarEstado={cambiarModalComunicacionPublicitaria}
+            titulo="Comunicación publicitaria"
+            mostrarHeader={true}
+            mostrarOverlay={false}
+            posicionVerticalModal={"center"}
+            posicionHorizontalModal={"center"}
+            padding={"20px"}
+          >
+            <Contenido>
+              <p>
+                Busca que las personas adquieran distintos hábitos de consumo,
+                ya sea de marcas, productos o ideas por medio de mensajes
+                persuasivos.
+              </p>
+              <Boton>Aceptar</Boton>
+            </Contenido>
+          </Modal>
+
+          <Modal
+            estado={modalEstrategiaDigital}
+            cambiarEstado={cambiarModalEstrategiaDigital}
+            titulo="Estrategia Digital"
+            mostrarHeader={true}
+            mostrarOverlay={false}
+            posicionVerticalModal={"center"}
+            posicionHorizontalModal={"center"}
+            padding={"20px"}
+          >
+            <Contenido>
+              <p>
+                Se apoya en la tecnología para transformar y potenciar el
+                rendimiento de una empresa, impulsando un cambio en la
+                experiencia del cliente, procesos operativos y modelos de
+                negocios.
+              </p>
+              <Boton>Aceptar</Boton>
+            </Contenido>
+          </Modal>
+
+          <Modal
+            estado={modalConsultoriaEstrategica}
+            cambiarEstado={cambiarModalConsultoriaEstrategica}
+            titulo="Consultoría Estratégica"
+            mostrarHeader={true}
+            mostrarOverlay={false}
+            posicionVerticalModal={"center"}
+            posicionHorizontalModal={"center"}
+            padding={"20px"}
+          >
+            <Contenido>
+              <p>
+                Suma con propuestas alineadas con la cultura, el mercado y
+                contexto de tu empresa.
+              </p>
+              <Boton>Aceptar</Boton>
+            </Contenido>
+          </Modal>
+
+          <Modal
+            estado={modalCoachingLideres}
+            cambiarEstado={cambiarModalCoachingLideres}
+            titulo="Consultoría Estratégica"
+            mostrarHeader={true}
+            mostrarOverlay={false}
+            posicionVerticalModal={"center"}
+            posicionHorizontalModal={"center"}
+            padding={"20px"}
+          >
+            <Contenido>
+              <p>
+                Promueve habilidades, estrategias y herramientas que te ayudan a
+                ser un líder que inspire, guíe, motive y además acompañe a su
+                equipo en todo momento.
+              </p>
+              <Boton>Aceptar</Boton>
+            </Contenido>
+          </Modal>
+
+          <Modal
+            estado={modalDiagnosticosComunicacion}
+            cambiarEstado={cambiarModalDiagnosticosComunicacion}
+            titulo="Diagnosticos de comunicación"
+            mostrarHeader={true}
+            mostrarOverlay={false}
+            posicionVerticalModal={"center"}
+            posicionHorizontalModal={"center"}
+            padding={"20px"}
+          >
+            <Contenido>
+              <p>
+                Promueve habilidades, estrategias y herramientas que te ayudan a
+                ser un líder que inspire, guíe, motive y además acompañe a su
+                equipo en todo momento.
+              </p>
+              <Boton>Aceptar</Boton>
+            </Contenido>
+          </Modal>
+
+          <Modal
+            estado={modalCreatividadProduccion}
+            cambiarEstado={cambiarModalCreatividadProduccion}
+            titulo="Creatividad y producción"
+            mostrarHeader={true}
+            mostrarOverlay={false}
+            posicionVerticalModal={"center"}
+            posicionHorizontalModal={"center"}
+            padding={"20px"}
+          >
+            <Contenido>
+              <p>
+              Tu diferenciador estará en las historias y narrativas que te ayudamos a contar a través de contenido audiovisual, artes y el storytelling, con el fin de transmitir la esencia y objetivos de tu marca. 
+              </p>
+              <Boton>Aceptar</Boton>
+            </Contenido>
+          </Modal>
         </section>
 
         <div className="spaceSection normalNavbar"></div>
@@ -162,13 +406,6 @@ function App() {
 }
 
 export default App;
-const ContenedorBotones = styled.div`
-  padding: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-`;
 
 const Boton = styled.button`
   display: block;
