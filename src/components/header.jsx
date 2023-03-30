@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 //Libs
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { MouseParallax } from "react-just-parallax";
 
 //Components
 import Nav from "./nav";
@@ -78,12 +79,14 @@ const Header = () => {
           >
             <Sidebar />
           </div>
+
           <img
             src={bocas1}
             alt="bocas"
             className="header__animate--item header__animate--item-boca1"
             ref={bocas1ref}
           />
+
           <img
             src={bocas2}
             alt="bocas"
@@ -124,7 +127,12 @@ const Header = () => {
       </header>
       <div className="spaceSection"></div>
       <div className="spaceSection"></div>
-      <img id="homeHerobannerEs" className="header__imgResponsive" src={homeherobannerEs} alt="" />
+      <img
+        id="homeHerobannerEs"
+        className="header__imgResponsive"
+        src={homeherobannerEs}
+        alt=""
+      />
     </section>
   );
 };

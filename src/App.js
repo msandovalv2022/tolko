@@ -6,6 +6,8 @@ import styled from "styled-components";
 //Libs
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+//Libs
+import { MouseParallax } from "react-just-parallax";
 
 // Componentes
 import Header from "./components/header";
@@ -62,8 +64,14 @@ function App() {
   ] = useState(false);
 
   const [modalCoachingLideres, cambiarModalCoachingLideres] = useState(false);
-  const [modalDiagnosticosComunicacion, cambiarModalDiagnosticosComunicacion] = useState(false);
-  const [modalCreatividadProduccion, cambiarModalCreatividadProduccion] = useState(false);
+  const [
+    modalDiagnosticosComunicacion,
+    cambiarModalDiagnosticosComunicacion,
+  ] = useState(false);
+  const [
+    modalCreatividadProduccion,
+    cambiarModalCreatividadProduccion,
+  ] = useState(false);
 
   useEffect(() => {
     const logoNormal = document.querySelector(".toolbar__logo--normal");
@@ -109,7 +117,9 @@ function App() {
       <Preloader />
       <section className="contentContainer">
         <Nav />
-        <Header />
+        <MouseParallax enableOnTouchDevice>
+          <Header />
+        </MouseParallax>
 
         <section class="historia bgBlack" ref={historiaContainerRef}>
           <h3 class="cTx whiteTx">{t("historia.queremos")}</h3>
@@ -178,15 +188,23 @@ function App() {
           </div>
           <div className="historia__textItem historia__textItem--diagnosticosComunicacion">
             <p className="whiteTx">Diagnósticos de comunicación</p>
-            <div onClick={() =>
-                cambiarModalDiagnosticosComunicacion(!modalDiagnosticosComunicacion)
-              } className="historia__textItem--circle circle"></div>
+            <div
+              onClick={() =>
+                cambiarModalDiagnosticosComunicacion(
+                  !modalDiagnosticosComunicacion
+                )
+              }
+              className="historia__textItem--circle circle"
+            ></div>
           </div>
           <div className="historia__textItem historia__textItem--creatividadProduccion">
             <p className="whiteTx">Creatividad y producción</p>
-            <div onClick={() =>
+            <div
+              onClick={() =>
                 cambiarModalCreatividadProduccion(!modalCreatividadProduccion)
-              }  className="historia__textItem--circle circle"></div>
+              }
+              className="historia__textItem--circle circle"
+            ></div>
           </div>
           <img src={Ondas} alt="" />
           {/* <img className="ondaResponsive" src={ondasSoloImg} alt="" /> */}
@@ -385,7 +403,10 @@ function App() {
           >
             <Contenido>
               <p>
-              Tu diferenciador estará en las historias y narrativas que te ayudamos a contar a través de contenido audiovisual, artes y el storytelling, con el fin de transmitir la esencia y objetivos de tu marca. 
+                Tu diferenciador estará en las historias y narrativas que te
+                ayudamos a contar a través de contenido audiovisual, artes y el
+                storytelling, con el fin de transmitir la esencia y objetivos de
+                tu marca.
               </p>
               <Boton>Aceptar</Boton>
             </Contenido>
