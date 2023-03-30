@@ -117,9 +117,16 @@ function App() {
       <Preloader />
       <section className="contentContainer">
         <Nav />
-        <MouseParallax enableOnTouchDevice>
-          <Header />
-        </MouseParallax>
+        <section className="headerHome">
+          <div className="headerHome__sidebar">
+            <Sidebar />
+          </div>
+          <div className="headerHome__animation">
+            <MouseParallax enableOnTouchDevice>
+              <Header />
+            </MouseParallax>
+          </div>
+        </section>
 
         <section class="historia bgBlack" ref={historiaContainerRef}>
           <h3 class="cTx whiteTx">{t("historia.queremos")}</h3>

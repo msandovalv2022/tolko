@@ -5,7 +5,6 @@ import { useTranslation } from "react-i18next";
 //Libs
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { MouseParallax } from "react-just-parallax";
 
 //Components
 import Nav from "./nav";
@@ -57,8 +56,9 @@ const Header = () => {
         // scrub: 3,
       },
     });
-    tl.to(sidebar, { x: 0, duration: 3 });
-    tl.to(sidebar, { x: 555, duration: 0.4 });
+    // tl.to(sidebar, { x: 0, duration: 3 });
+    // tl.to(sidebar, { x: 555, duration: 0.4 });
+    tl.to(bocas2, { y: 0, duration: 3 }); //En esta animación no se anima nada, sólo se usa para darle 3 segundos de espera para dejar que el preloader termine su animación
     tl.to(bocas2, { y: 800, duration: 0.4 });
     tl.to(bocas3, { x: -960, duration: 0.4 });
     tl.to(text1, { y: 630, duration: 0.4 });
@@ -77,7 +77,7 @@ const Header = () => {
             className="header__animate--item header__animate--item-sidebar"
             ref={sidebarRef}
           >
-            <Sidebar />
+            {/* <Sidebar /> */}
           </div>
 
           <img
@@ -86,13 +86,12 @@ const Header = () => {
             className="header__animate--item header__animate--item-boca1"
             ref={bocas1ref}
           />
-
-          <img
-            src={bocas2}
-            alt="bocas"
-            className="header__animate--item header__animate--item-boca2"
-            ref={bocas2ref}
-          />
+            <img
+              src={bocas2}
+              alt="bocas"
+              className="header__animate--item header__animate--item-boca2"
+              ref={bocas2ref}
+            />
           <p
             className="header__animate--item header__animate--item-txt1"
             ref={text1ref}

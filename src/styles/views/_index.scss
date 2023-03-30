@@ -1,3 +1,11 @@
+.headerHome{
+  &__sidebar{
+    position: absolute;
+    top: 198px;
+    left: -20px;
+    z-index: 98;
+  }
+}
 .historia {
   display: flex;
   flex-direction: column;
