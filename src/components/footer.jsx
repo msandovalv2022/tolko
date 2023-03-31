@@ -49,8 +49,8 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer__firstPart--googleMap">
-          <LinkImg class="verticalGoogleMap" link="https://goo.gl/maps/n6XRwtM8f8Pp5kfV6" img={googleMaps}/>
-          <LinkImg class="horizontalGoogleMap" link="https://goo.gl/maps/n6XRwtM8f8Pp5kfV6" img={horizontalGoogleMap}/>
+          <LinkImg className="verticalGoogleMap" link="https://goo.gl/maps/n6XRwtM8f8Pp5kfV6" img={googleMaps} blank = {true}/>
+          <LinkImg className="horizontalGoogleMap" link="https://goo.gl/maps/n6XRwtM8f8Pp5kfV6" img={horizontalGoogleMap} blank = {true}/>
         </div>
       </section>
       <section className="footer__secondPart">
@@ -61,10 +61,10 @@ const Footer = () => {
             </p>
           </li>
           <li>
-            <Link link="#" text={t("footer.privacidad")} />
+            <Link link="#" text={t("footer.privacidad")} blank = {true}/>
           </li>
           <li>
-            <Link link="#" text={t("footer.accesibilidad")} />
+            <Link link="#" text={t("footer.accesibilidad")} blank = {true}/>
           </li>
         </ul>
       </section>

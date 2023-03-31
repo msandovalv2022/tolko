@@ -16,12 +16,12 @@ const Toolbar = ({ openSidetoolbar, refTool, refLogo, refLogoWhite }) => {
     <div className="toolbar">
       <div className="toolbar__logo">
         <LinkImg
-          class="imgLight toolbar__logo--normal"
+          className="imgLight toolbar__logo--normal"
           link="#"
           img={logoTolko}
         />
         <LinkImg
-          class="imgDark toolbar__logo--white"
+          className="imgDark toolbar__logo--white"
           link="#"
           img={logoTolkoWhite}
         />

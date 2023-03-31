@@ -38,21 +38,21 @@ const Sidebar = () => {
         </div>
 
         <div className="sidebar__itemsContainer--cotiza">
-          <Link link="#" text={t("sidebar.factor")} />
-          <LinkImg class="arrow" link="#" img={arrowRight} />
+          <Link link="#" text={t("sidebar.factor")}/>
+          <LinkImg className="arrow" link="#" img={arrowRight} />
         </div>
 
         <div className="sidebar__itemsContainer--social">
           {/* LIGHT IMAGES */}
-          <LinkImg class="imgLight" link="https://www.instagram.com/grupo_tolko/?hl=en" img={instagram} />
-          <LinkImg class="imgLight" link="https://twitter.com/tolkogroup" img={twitter} />
-          <LinkImg class="imgLight" link="https://www.facebook.com/tolkogroup/" img={facebook} />
-          <LinkImg class="imgLight" link="https://www.linkedin.com/company/tolko/" img={linkedIn} />
+          <LinkImg className="imgLight" link="https://www.instagram.com/grupo_tolko/?hl=en" img={instagram} blank = {true}/>
+          <LinkImg className="imgLight" link="https://twitter.com/tolkogroup" img={twitter} blank = {true}/>
+          <LinkImg className="imgLight" link="https://www.facebook.com/tolkogroup/" img={facebook} blank = {true}/>
+          <LinkImg className="imgLight" link="https://www.linkedin.com/company/tolko/" img={linkedIn} blank = {true}/>
           {/* DARK IMAGES */}
-          <LinkImg class="imgDark" link="https://www.instagram.com/grupo_tolko/?hl=en" img={instagramWhite} />
-          <LinkImg class="imgDark" link="https://twitter.com/tolkogroup" img={twitterWhite} />
-          <LinkImg class="imgDark" link="https://www.facebook.com/tolkogroup/" img={facebookWhite} />
-          <LinkImg class="imgDark" link="https://www.linkedin.com/company/tolko//" img={linkedInWhite} />
+          <LinkImg className="imgDark" link="https://www.instagram.com/grupo_tolko/?hl=en" img={instagramWhite} blank = {true}/>
+          <LinkImg className="imgDark" link="https://twitter.com/tolkogroup" img={twitterWhite} blank = {true}/>
+          <LinkImg className="imgDark" link="https://www.facebook.com/tolkogroup/" img={facebookWhite} blank = {true}/>
+          <LinkImg className="imgDark" link="https://www.linkedin.com/company/tolko//" img={linkedInWhite} blank = {true}/>
         </div>
       </div>
     </section>

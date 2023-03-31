@@ -117,12 +117,8 @@ function App() {
       <Preloader />
       <section className="contentContainer">
         <Nav>
-          <li>
-            <Link link="#home__main" text="Home" />
-          </li>
-          <li>
-            <Link link="#home__servicios" text="Servicios" />
-          </li>
+          <li> <Link link="#home__main" text="Home" blank= {false} /> </li>
+          <li> <Link link="#home__servicios" text="Servicios" blank= {false} /> </li>
         </Nav>
         <section id="home__main" className="headerHome">
           <div className="headerHome__sidebar">

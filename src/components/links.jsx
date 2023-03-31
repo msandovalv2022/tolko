@@ -1,12 +1,12 @@
-const Link = (props) =>{
+const Link = ({link, text, alt, blank = false}) =>{
     return(
-        <a className="link" target={"_blank"} rel={"noopenner"} href={props.link}>{props.text}</a>
+        <a className="link" href={link} alt={alt} target={ blank ? "_blank" : ""} rel={"noopenner"}> {text} </a>
     )
 }
 
-const LinkImg = (props) =>{
+const LinkImg = ({className, link, img, alt, blank = false}) =>{
     return(
-        <a className={props.class} target={"_blank"} rel={"noopenner"} href={props.link}><img src={props.img} alt="" /></a>
+        <a className={className} href={link} alt={alt} target={ blank ? "_blank" : ""} rel={"noopenner"} > <img src={img}/> </a>
     )
 }
 
