@@ -32,7 +32,7 @@ import ondasSoloImg from "./assets/img/ondas.png";
 import CircleWaves from "./assets/img/circle.svg";
 import SVG from "./assets/svg-loaders/audio.svg";
 import CertifiedWomen from "./assets/img/certifiedWomen.png";
-import { LinkImg } from "./components/links";
+import { Link, LinkImg } from "./components/links";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -116,8 +116,15 @@ function App() {
     <div className="App">
       <Preloader />
       <section className="contentContainer">
-        <Nav />
-        <section className="headerHome">
+        <Nav>
+          <li>
+            <Link link="#home__main" text="Home" />
+          </li>
+          <li>
+            <Link link="#home__servicios" text="Servicios" />
+          </li>
+        </Nav>
+        <section id="home__main" className="headerHome">
           <div className="headerHome__sidebar">
             <Sidebar />
           </div>
@@ -128,7 +135,7 @@ function App() {
           </div>
         </section>
 
-        <section class="historia bgBlack" ref={historiaContainerRef}>
+        <section id="home__servicios" class="historia bgBlack" ref={historiaContainerRef}>
           <h3 class="cTx whiteTx">{t("historia.queremos")}</h3>
           <div className="historia__textItem historia__textItem--comunicacionCorporativa">
             <p className="whiteTx">Comunicación corporativa</p>
