@@ -117,8 +117,18 @@ function App() {
       <Preloader />
       <section className="contentContainer">
         <Nav>
-          <li> <Link link="#home__main" text="Home" blank= {false} /> </li>
-          <li> <Link link="#home__servicios" text="Servicios" blank= {false} /> </li>
+          <li>
+            {" "}
+            <Link link="#home__main" text="Home" blank={false} />{" "}
+          </li>
+          <li>
+            {" "}
+            <Link link="#home__servicios" text="Servicios" blank={false} />{" "}
+          </li>
+          <li>
+            {" "}
+            <Link link="#home__logros" text="Logros" blank={false} />{" "}
+          </li>
         </Nav>
         <section id="home__main" className="headerHome">
           <div className="headerHome__sidebar">
@@ -131,7 +141,11 @@ function App() {
           </div>
         </section>
 
-        <section id="home__servicios" class="historia bgBlack" ref={historiaContainerRef}>
+        <section
+          id="home__servicios"
+          class="historia bgBlack"
+          ref={historiaContainerRef}
+        >
           <h3 class="cTx whiteTx">{t("historia.queremos")}</h3>
           <div className="historia__textItem historia__textItem--comunicacionCorporativa">
             <p className="whiteTx">Comunicación corporativa</p>

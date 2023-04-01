@@ -1,6 +1,6 @@
 // @import "sass:math";
 // @function rem($px){
-//   @return div($px, 1rem) * 16px; 
+//   @return div($px, 1rem) * 16px;
 // }
 * {
   margin: 0;
@@ -8,17 +8,18 @@
   box-sizing: border-box;
   overflow-x: hidden;
   font-family: $futura;
+  scroll-behavior: smooth;
 }
 body {
   &.light {
     background-color: $white;
     color: $black;
-    .header{
-      &__scroll{
-        &--iconLight{
+    .header {
+      &__scroll {
+        &--iconLight {
           display: block;
         }
-        &--iconDark{
+        &--iconDark {
           display: none;
         }
       }
@@ -65,17 +66,17 @@ body {
   &.dark {
     background-color: #1d1d1d;
     color: $white;
-    .header{
-      &__scroll{
-        &--iconLight{
+    .header {
+      &__scroll {
+        &--iconLight {
           display: none;
         }
-        &--iconDark{
+        &--iconDark {
           display: block;
         }
       }
-      &__animate{
-        p{
+      &__animate {
+        p {
           background-color: $grey3;
         }
       }

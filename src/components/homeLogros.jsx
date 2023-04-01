@@ -67,7 +67,7 @@ const HomeLogros = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="logrosContainer">
+    <section id="home__logros" className="logrosContainer">
       <section className="logrosAnimate" ref={logrosContainerRef}>
         <h2 className="cTx">{t("logros.meses")}</h2>
 
