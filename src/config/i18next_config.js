@@ -60,7 +60,8 @@ i18n
                 },
                 // -------------FOOTER---------------
                 "footer":{
-                    "experiencia": "Contamos con más de 20 años de experiencia",
+                    "certificado": "Certificado",
+                    "2023": "2023",
                     "contacto": "Contacto",
                     "contactoFacebook": "Facebook",
                     "contactoInstagram": "Instagram",

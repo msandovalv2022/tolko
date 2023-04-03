@@ -9,6 +9,7 @@ import horizontalSplit from "./horizontalSplit,";
 import googleMaps from '../assets/img/googleMaps.svg';
 import horizontalGoogleMap from '../assets/img/horizontalGoogleMap.png';
 import weConnectImg from '../assets/img/weConnect.svg';
+import logoBlanco_weConnectImg from '../assets/img/logoBlanco_weConnect.png';
 const Footer = () => {
   const {t} = useTranslation();
 
@@ -16,8 +17,8 @@ const Footer = () => {
     <footer className="footer bgBlack whiteTx">
       <section className="footer__firstPart">
         <div className="footer__firstPart--text">
-          <h2>{t("footer.experiencia")}</h2>
-          <img src={weConnectImg} alt="Logo we connect" />
+          <img src={logoBlanco_weConnectImg} alt="Logo we connect" />
+          <p> <b className='text1'> {t("footer.certificado")} </b> <b className='text2'> {t("footer.2023")} </b></p>
         </div>
         <div className="footer__firstPart--social">
           <p>{t("footer.contacto")}</p>
