@@ -3,6 +3,11 @@ const Link = ({link, text, alt, blank = false}) =>{
         <a className="link" href={link} alt={alt} target={ blank ? "_blank" : ""} rel={"noopenner"}> {text} </a>
     )
 }
+const LinkMail = ({mail, text, alt, blank = false}) =>{
+    return(
+        <a className="link" href = {mail} alt={alt} target={ blank ? "_blank" : ""} rel={"noopenner"}> {text} </a>
+    )
+}
 
 const LinkImg = ({className, link, img, alt, blank = false}) =>{
     return(
@@ -12,5 +17,6 @@ const LinkImg = ({className, link, img, alt, blank = false}) =>{
 
 export{
     Link,
+    LinkMail,
     LinkImg
 }

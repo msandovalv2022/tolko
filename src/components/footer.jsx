@@ -2,7 +2,7 @@
 import {useTranslation} from 'react-i18next'; //Hook de i18next
 //Components
 
-import { Link, LinkImg } from "./links";
+import { Link, LinkMail, LinkImg } from "./links";
 import horizontalSplit from "./horizontalSplit,";
 
 //Imgs
@@ -24,13 +24,13 @@ const Footer = () => {
           <p>{t("footer.contacto")}</p>
           <ul>
             <li>
-              <Link link="#" text="Facebook" />
+              <Link link="https://www.facebook.com/tolkogroup/" text="Facebook" blank = {true} />
             </li>
             <li>
-              <Link link="#" text="Instagram" />
+              <Link link="https://www.instagram.com/grupo_tolko/?hl=en" text="Instagram" blank = {true} />
             </li>
             <li>
-              <Link link="#" text={t("footer.contactoCorreo")} />
+              <LinkMail mail="mailto: contacto@tolkogroup.com" text={t("footer.contactoCorreo")} blank = {true} />
             </li>
           </ul>
         </div>
