@@ -143,11 +143,11 @@ function App() {
 
         <section
           id="home__servicios"
-          class="historia bgBlack"
+          class="servicios bgBlack"
           ref={historiaContainerRef}
         >
           <h3 class="cTx whiteTx">{t("historia.queremos")}</h3>
-          <div className="historia__textItem historia__textItem--comunicacionCorporativa">
+          <div className="servicios__textItem servicios__textItem--comunicacionCorporativa">
             <p className="whiteTx">Comunicación corporativa</p>
             <div
               onClick={() =>
@@ -155,26 +155,26 @@ function App() {
                   !modalComunicacionCorporativa
                 )
               }
-              className="historia__textItem--circle circle"
+              className="servicios__textItem--circle circle"
             ></div>
           </div>
-          <div className="historia__textItem historia__textItem--relaciones">
+          <div className="servicios__textItem servicios__textItem--relaciones">
             <p className="whiteTx">Relaciones públicas</p>
             <div
               onClick={() =>
                 cambiarModalRelacionesPublicas(!modalRelacionesPublicas)
               }
-              className="historia__textItem--circle circle"
+              className="servicios__textItem--circle circle"
             ></div>
           </div>
-          <div className="historia__textItem historia__textItem--reputacion">
+          <div className="servicios__textItem servicios__textItem--reputacion">
             <p className="whiteTx">Reputación</p>
             <div
               onClick={() => cambiarModalReputacion(!modalReputacion)}
-              className="historia__textItem--circle circle"
+              className="servicios__textItem--circle circle"
             ></div>
           </div>
-          <div className="historia__textItem historia__textItem--comunicacionPublicitaria">
+          <div className="servicios__textItem servicios__textItem--comunicacionPublicitaria">
             <p className="whiteTx">Comunicación publicitaria</p>
             <div
               onClick={() =>
@@ -182,35 +182,35 @@ function App() {
                   !modalComunicacionPublicitaria
                 )
               }
-              className="historia__textItem--circle circle"
+              className="servicios__textItem--circle circle"
             ></div>
           </div>
-          <div className="historia__textItem historia__textItem--estrategiaDigital">
+          <div className="servicios__textItem servicios__textItem--estrategiaDigital">
             <p className="whiteTx">Estrategia digital</p>
             <div
               onClick={() =>
                 cambiarModalEstrategiaDigital(!modalEstrategiaDigital)
               }
-              className="historia__textItem--circle circle"
+              className="servicios__textItem--circle circle"
             ></div>
           </div>
-          <div className="historia__textItem historia__textItem--consultoriaEstrategica">
+          <div className="servicios__textItem servicios__textItem--consultoriaEstrategica">
             <p className="whiteTx">Consultoría estratégica</p>
             <div
               onClick={() =>
                 cambiarModalConsultoriaEstrategica(!modalConsultoriaEstrategica)
               }
-              className="historia__textItem--circle circle"
+              className="servicios__textItem--circle circle"
             ></div>
           </div>
-          <div className="historia__textItem historia__textItem--coachingLideres">
+          <div className="servicios__textItem servicios__textItem--coachingLideres">
             <p className="whiteTx">Coaching a líderes</p>
             <div
               onClick={() => cambiarModalCoachingLideres(!modalCoachingLideres)}
-              className="historia__textItem--circle circle"
+              className="servicios__textItem--circle circle"
             ></div>
           </div>
-          <div className="historia__textItem historia__textItem--diagnosticosComunicacion">
+          <div className="servicios__textItem servicios__textItem--diagnosticosComunicacion">
             <p className="whiteTx">Diagnósticos de comunicación</p>
             <div
               onClick={() =>
@@ -218,16 +218,16 @@ function App() {
                   !modalDiagnosticosComunicacion
                 )
               }
-              className="historia__textItem--circle circle"
+              className="servicios__textItem--circle circle"
             ></div>
           </div>
-          <div className="historia__textItem historia__textItem--creatividadProduccion">
+          <div className="servicios__textItem servicios__textItem--creatividadProduccion">
             <p className="whiteTx">Creatividad y producción</p>
             <div
               onClick={() =>
                 cambiarModalCreatividadProduccion(!modalCreatividadProduccion)
               }
-              className="historia__textItem--circle circle"
+              className="servicios__textItem--circle circle"
             ></div>
           </div>
           <img src={Ondas} alt="" />
