@@ -135,7 +135,7 @@ function App() {
             <Sidebar />
           </div>
           <div className="headerHome__animation">
-            <MouseParallax enableOnTouchDevice>
+            <MouseParallax enableOnTouchDevice lerpEase = {2}>
               <Header />
             </MouseParallax>
           </div>

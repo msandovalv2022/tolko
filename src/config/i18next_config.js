@@ -126,7 +126,8 @@ i18n
                     "entrevistas": "Thousands of interviews"
                 },
                 "footer":{
-                    "experiencias": "We have more than 20 years of experience",
+                    "certificado": "Certified",
+                    "2023": "2023",
                     "contacto": "Contact",
                     "contactoFacebook": "Facebook",
                     "contactoInstagram": "Instagram",
